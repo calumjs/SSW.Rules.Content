@@ -3,8 +3,12 @@ type: category
 title: Rules to Better Interfaces (Forms)
 guid: f46457d7-6684-440e-9a68-b18202963dc4
 uri: rules-to-better-interfaces-forms
+redirects:
+- rules-to-better-interfaces-(forms)
 index:
+- avoid-labels
 - avoid-ending-labels-text-with-a-colon
+- how-to-align-your-form-labels
 - do-you-align-your-add-edit-delete-buttons-horizontal-and-bottom-right
 - do-you-avoid-data-junk-data-not-manually-entered-by-yourself
 - do-you-avoid-combining-different-entities
@@ -18,7 +22,6 @@ index:
 - do-you-group-related-fields-by-using-fieldset
 - do-you-have-a-label-tag-for-the-fields-associated-with-your-input
 - do-you-have-consistent-way-to-store-a-same-field
-- how-to-align-your-form-labels
 - do-you-know-the-correct-way-to-develop-data-entry-forms
 - do-you-label-your-form-buttons-consistently
 - do-you-make-text-boxes-show-the-whole-query
@@ -30,5 +33,6 @@ index:
 - do-your-windows-forms-have-border-protection
 
 ---
-For specific Windows Forms rules, go to [Rules to Better Windows Forms Applications](/SoftwareDevelopment/RulesToBetterWindowsForms).
+
+For specific Windows Forms Application rules, go to [Rules to Better Windows Forms Applications](/rules-to-better-windows-forms).
 

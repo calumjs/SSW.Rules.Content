@@ -1,6 +1,6 @@
 ---
 type: category
-title: Rules To Better SQL Databases - Developers
+title: Rules to Better SQL Databases - Developers
 guid: c66da635-3483-4287-9d19-013152b12d0f
 uri: rules-to-better-sql-databases-developers
 index:
@@ -8,6 +8,7 @@ index:
 - do-not-allow-nulls-in-number-fields-if-it-has-the-same-meaning-as-zero
 - avoid-spaces-and-empty-lines-at-the-start-of-character-columns
 - use-identities-in-sql-server
+- avoid-deleting-records-by-flagging-them-as-isdeleted
 - make-sure-you-have-valid-date-data-in-your-database
 - datetime-fields-must-be-converted-to-universal-time
 - use-temporal-tables-to-audit-data-changes
@@ -34,6 +35,7 @@ index:
 - how-to-provide-best-database-schema-document
 - schema-do-you-add-zs-prefix-to-system-tables
 - do-not-have-views-as-redundant-objects
+- every-object-name-should-be-owned-by-dbo
 - keep-your-stored-procedures-simple
 - return-a-value-indicating-the-status
 - standardize-the-return-values-of-stored-procedures-for-success-and-failures
@@ -68,28 +70,15 @@ index:
 - submit-all-dates-to-sql-server-in-iso-format
 
 ---
+
 Here are some of the typical things that all SQL Server DBAs and Database developers should know. These rules are above and beyond the most basic textbook recommendations of:
 
+- Ensuring your databases are Normalized and in 3rd Normal Form 
+- Making sure you have primary keys, foreign keys and simple indexes to improve performance 
+- Making sure you Back up regularly 
+- Basic Naming conventions (see some of our object naming conventions)
+- Minimizing result set sizes and data over the wire
 
-▪   Ensuring your databases are Normalized and in 3rd Normal Form 
+View [Database Coding Standard and Guideline](http://www.nyx.net/~bwunder/dbChangeControl/standard.htm).
 
-
-▪   Making sure you have primary keys, foreign keys and simple indexes to improve performance 
-
-
-▪   Making sure you Back up regularly 
-
-
-▪   Basic Naming conventions (see some of our object naming conventions)
-
-
-▪   Minimizing result set sizes and data over the wire
-
-Link: [Database Coding Standard and Guideline](http&#58;//www.nyx.net/~bwunder/dbChangeControl/standard.htm).
-
-
-
-
-
-If you still need help, [visit our SQL Server Database consulting page](https&#58;//www.ssw.com.au/ssw/Consulting/Database-Development.aspx) and book in a consultant.
-
+If you still need help, visit our [SQL Server Database consulting page](https://www.ssw.com.au/ssw/Consulting/Database-Development.aspx) and book in a consultant.

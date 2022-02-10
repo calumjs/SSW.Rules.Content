@@ -10,7 +10,10 @@ index:
 - follow-security-checklists
 - do-you-use-built-in-authentication-from-ms
 - use-automatic-key-management-with-duende-identityserver
+- do-you-disable-insecure-protocols
+- password-manager
+- run-services-on-their-own-ad-accounts
 
 ---
 
-Do you know the best free .NET security videos? [Watch them on SSW TV](https&#58;//tv.ssw.com/category/security).
+Watch [the best security videos on SSW TV](https://tv.ssw.com/category/security) for free.

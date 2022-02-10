@@ -3,6 +3,8 @@ type: category
 title: Rules to Better UI (Bootstrap)
 guid: add2d97c-ee8c-4ee7-b11f-7d7a30e13628
 uri: rules-to-better-ui-bootstrap
+redirects:
+- rules-to-better-ui-(bootstrap)
 index:
 - do-you-always-use-less-instead-of-plain-old-css
 - do-you-provide-alternate-sizings-for-bootstrap-columns
@@ -20,3 +22,6 @@ In this video, Ben Cull walks us through Bootstrap, how it impacts your developm
  
 `youtube: https://www.youtube.com/embed/bIGiUSMBwoo`
 
+**Note:** There's been syntax changes in Bootstrap versions from when this was recorded. Example:
+In the video what was written: "col-md-offset" 
+...is currently written: "offset-col-md" (according to the Bootstrap 5 docs)

@@ -1,19 +1,19 @@
 ---
 type: rule
-archivedreason:
 title: Example Rule + Markdown Cheatsheet
-guid: 55db32aa-0718-4868-995c-673d8dd69f62
 uri: rule
-created: 2021-01-20T05:06:33.0000000Z
 authors:
-- title: Christian Morford-Waite
-  url: https://ssw.com.au/people/christian-morford-waite
-- title: Sebastien-Boissiere
-  url: https://ssw.com.au/people/sebastien-boissiere
-- title: Tiago Araujo
-  url: https://ssw.com.au/people/tiago-araujo
-related: []
-
+  - title: Christian Morford-Waite
+    url: https://ssw.com.au/people/christian-morford-waite
+  - title: Sebastien Boissiere
+    url: https://ssw.com.au/people/sebastien-boissiere
+  - title: Tiago Araujo
+    url: https://ssw.com.au/people/tiago-araujo
+related:
+  - do-you-understand-the-value-of-consistency
+created: 2021-01-20T05:06:33.000Z
+archivedreason: null
+guid: 55db32aa-0718-4868-995c-673d8dd69f62
 ---
 
 This is an example rule to show you what is possible for a rule. 
@@ -41,18 +41,16 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
    * This is the first item of an unordered list inside another
    * This is the second item of an unordered list inside another
       1. This is the first item of an ordered list inside an unordered list
-      1. This is the second item of an ordered list inside an unordered list 
-   
-&nbsp;  
+      2. This is the second item of an ordered list inside an unordered list 
 
 #### Ordered List
 1. This is the first item of an ordered list
-1. This is the second item of an ordered list
-1. This is the third item of an ordered list
+2. This is the second item of an ordered list
+3. This is the third item of an ordered list
    * This is the first item of an unordered list inside an ordered list
    * This is the second item of an unordered list inside an ordered list
       1. This is the first item of an ordered list inside another
-      1. This is the second item of an ordered list inside another
+      2. This is the second item of an ordered list inside another
 
 ### Boxes
 
@@ -93,6 +91,10 @@ This is a &lt;div&gt; using the class "info". Works the same as using a &lt;p&gt
 
 ::: china  
 This is a &lt;div&gt; using the class "china". Works the same as using a &lt;p&gt; . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+:::
+
+::: codeauditor
+This is a &lt;div&gt; using the class "codeauditor". Works the same as using a &lt;p&gt; . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
 :::
 
 ::: todo  
@@ -207,7 +209,6 @@ int main()
 ```
 **Figure: JSON code block**
 
-
 ```markdown
 *This text will be italic*
 _This will also be italic_
@@ -220,9 +221,22 @@ _You **can** combine them_
 **Figure: Markdown code block**
 
 
-
 ### Twitter Card Embed  
 `oembed: https://twitter.com/MrHinsh/status/24123713864`
+
+To add a twitter card, copy the link of the tweet then add it to the rule with backticks on each side like this.
+```markdown
+`oembed: https://twitter.com/MrHinsh/status/24123713864`
+```
+
+You can also add a good or bad caption to embeded tweets e.g.
+```markdown
+`oembed: https://twitter.com/MrHinsh/status/24123713864`
+
+::: good
+Figure: My embedded tweet
+:::
+```
 
 ### Email Template  
 ::: email-template  
@@ -278,6 +292,11 @@ bfb265e3-644e-4cbe-b17c-4d378b014809-7947936
 Check out this video - it's responsive!  
 `youtube: https://www.youtube.com/embed/0ugMkda9IBw`
 
+Adding a video is similar to a tweet:
+```md
+`youtube: https://www.youtube.com/embed/0ugMkda9IBw`
+```
+
 ### Images
 ::: bad  
 ![Figure: Bad figure](https://images.unsplash.com/photo-1542014740373-51ad6425eb7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
@@ -309,20 +328,22 @@ Check out this video - it's responsive!
 
 ![Figure: Short caption](https://images.unsplash.com/photo-1528820454441-189cd70a6c3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80)
 
+![Figure: Relative image - in the same folder as the rule](earth_from_space.jpg)
 
-# Horizontal Rules
+
+### Horizontal Rules
 ---
 ***
 ___
 
-# Text decoration
+### Text decoration
 
 **bold** or **bold**  
 _italic_ or _italic_  
 **combined bold and _italic_**  
 ~~strikethrough~~  
 
-# Tables
+### Tables
 &nbsp; 
 
 | Tables        |      Are      |   Cool |
@@ -349,7 +370,7 @@ _italic_ or _italic_
 ```
 ---
 
-# Links
+### Links
 
 [I'm an inline-style link](https://www.google.com)  
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")  
@@ -364,3 +385,7 @@ Some text to show that the reference links can follow later.
 [arbitrary case-insensitive reference text]: https://www.mozilla.org  
 [1]: http://slashdot.org  
 [link text itself]: http://www.reddit.com
+
+::: todo
+Implement all the different types of file links to SSW Rules: [https://www.ssw.com.au/rules/do-you-use-icons-not-to-surprise-users-aka-use-the-correct-image-for-files](https://www.ssw.com.au/rules/do-you-use-icons-not-to-surprise-users-aka-use-the-correct-image-for-files)
+:::

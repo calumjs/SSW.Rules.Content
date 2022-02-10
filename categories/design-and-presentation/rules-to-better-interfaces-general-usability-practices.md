@@ -3,6 +3,8 @@ type: category
 title: Rules to Better Interfaces (General Usability Practices)
 guid: 42bb8843-7a37-4727-b51e-4d168242b1bb
 uri: rules-to-better-interfaces-general-usability-practices
+redirects:
+- rules-to-better-interfaces-(general-usability-practices)
 index:
 - do-you-know-the-importance-of-testing-your-interface
 - do-you-realize-that-a-good-interface-should-not-require-instructions
@@ -18,14 +20,12 @@ index:
 - do-you-make-the-homepage-as-a-portal
 - does-your-applications-interface-fit-in-a-small-screen-resolution
 - authentication-do-you-make-the-logged-in-state-clear
-- give-context-do-you-include-extra-information-e-g-checkboxes
-- give-context-do-you-include-extra-information-e-g-screenshots
 - do-you-log-usage
 - help-do-you-have-a-wiki-for-each-page-or-form
 - help-do-you-help-users-when-they-get-errors-by-directing-them-to-a-wiki-or-kb
 - do-you-strike-through-completed-items
 - do-you-use-the-metro-ui-when-applicable
-- do-you-give-the-6-options-to-share
+- do-you-provide-options-for-sharing
 - do-you-have-a-search-box-to-make-your-data-easy-to-find
 - how-to-use-gamification
 - do-you-highlight-incomplete-work-with-red-text
@@ -41,10 +41,10 @@ index:
 - do-you-make-your-cancel-button-less-obvious
 - show-inactive-record
 - do-you-understand-the-importance-of-language-in-your-ui
-- do-you-use-commas-on-more-than-3-figures-numbers
+- make-numbers-more-readable
+- add-a-spot-of-color-for-emphasis
 
 ---
-Since 1990, SSW has supported the developer community by publishing all our best practices and rules for everyone to see.
 
-If you still need help, visit [Website Design and User Experience](http&#58;//www.ssw.com.au/ssw/Consulting/WebsiteDesignAndUserExperience.aspx) and book in a consultant.
+If you still need help, visit [Website Design and User Experience](https://www.ssw.com.au/ssw/Consulting/UI-UX-Design.aspx) and book in a consultant.
 

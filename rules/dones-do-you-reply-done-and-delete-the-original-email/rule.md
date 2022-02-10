@@ -12,7 +12,9 @@ authors:
   url: https://ssw.com.au/people/cameron-shaw
 - title: Ulysses Maclaren
   url: https://ssw.com.au/people/ulysses-maclaren
-related: []
+related: 
+- done-do-you-go-beyond-done-and-follow-a-definition-of-done
+- dones-do-you-include-useful-details-in-your-done-email
 redirects: []
 
 ---
@@ -55,55 +57,13 @@ Not done - checked with Northwind and they're happy with the form as it is
 Figure: Good Example - "Not Done" email
 :::
 
-#### Tips for your "Done" emails
-
 ### Tip 1: Say "Done" first
 
 For clarity, "Done" (or "Not done" / "Already Done" / "Partially Done") should be the first word(s) so the **reader knows the status straight away**.
 
 ### Tip 2: Provide details in your "Done"
 
-In any reply, **include relevant information**, such as URLs, screenshots, and pieces of code/text that have been updated. This allows others to check what was done straight away.
-
-::: greybox
-**Extra tips:**
-- Read [Screenshots - Do you use balloons instead of a 'Wall of Text'?](/screenshots-do-you-use-balloons-instead-of-a-wall-of-text).
-- On browser screenshots, make sure you include the top-left area - so you can see the URL and what browser it is. E.g. Chrome or Edge
-:::
-
-::: email-template  
-|          |     |
-| -------- | --- |
-| To:      | Jason |
-| Subject: | RE: Northwind - Include one more field to the form |  
-::: email-content  
-
-### Hi Jason,  
-Done on the contact page
-
-:::  
-:::  
-::: bad  
-Figure: Bad Example - "Done" email lacks of details
-:::
-
-::: email-template  
-|          |     |
-| -------- | --- |
-| To:      | Jason |
-| Subject: | RE: Northwind - Include one more field to the form |  
-::: email-content  
-
-### Hi Jason,  
-Done - added "State" field to the contact form - <u>northwind&#46;com/contact</u>
-
-  ![Figure: New "State" field added](good-done-example-form.png)  
-
-:::  
-:::  
-::: good  
-Figure: Good Example - "Done" email has a link and a screenshot
-:::
+In any reply, [include relevant information](/dones-do-you-include-useful-details-in-your-done-email), such as URLs, screenshots, and pieces of code/text that have been updated. This allows others to check what was done straight away.
 
 ### Tip 3: Replying "Done" to multiple tasks
 
@@ -144,40 +104,7 @@ Jason
 :::  
 :::
 ::: bad
-Figure: Bad Example – It’s not clear which tasks have been done and which haven’t  
-:::
-
-::: email-template  
-|          |     |
-| -------- | --- |
-| To:      | Bob |
-| Subject: | RE: Northwind website - Update logo + add a photo |  
-::: email-content  
-
-### Hi Bob,  
-
-1. Done - See <u>northwind&#46;com</u>
-2. Not Done - I couldn’t find a camera.
-
-Jason
-
----
-**From:** Bob   
-**To:** Jason   
-**Subject:** Northwind website - Update logo + add a photo  
-
-### Hi Jason,  
-As per our conversation,
-
-1. Update the logo on Northwind website the new logo
-2. Take a photo of the office façade and add to the "About Us" page
-
-Bob
-
-:::  
-:::
-::: ok
-Figure: OK Example – You can see which tasks have been done and which haven’t, but you have to scroll to the original email to know what the tasks were 
+Figure: Bad Example – It is not clear which tasks have been done and which haven’t  
 :::
 
 ::: email-template  
@@ -207,8 +134,8 @@ Bob
 
 :::  
 :::
-::: ok
-Figure: OK Example – It’s clear which tasks have been done, but we prefer not to reply inline  
+::: bad
+Figure: Bad Example – It is clear which tasks have been done, however, [replying inline should be avoided](/email-avoid-inline) as it messes up the history
 :::
 
 ::: email-template  
@@ -233,11 +160,11 @@ Not Done - I couldn’t find a camera.
 :::  
 :::
 ::: good
-Figure: Good Example – It is very clear which tasks have been done and which haven’t  
+Figure: Good Example – It is very clear which tasks have been done and which haven’t. Quoting the original task is only necessary when some tasks are done and some are not see [Do you use indentation for readability?](/do-you-use-indentation-for-readability)  
 :::
 
 ::: greybox
-**Extra Tip:** 
+**Extra:** 
 
 What do you do with the "Not Done" tasks?  
 
@@ -256,24 +183,19 @@ c. Give a reason if it won't be done.
 
 ### Hi Bob,  
 
-   &gt; 1. Update the logo on Northwind website the new logo    
-   &gt; 2. Take a photo of the office façade and add to the "About Us" page   
-All Done 
+All Done - see [insert URL]
 
 Jason
 
 :::  
 :::
 ::: good
-Figure: Good example – If multiple tasks are 'done' with no need for extra explanation, you can combine them. It’s clear that all tasks have been done
+Figure: Good example – If multiple tasks are 'done', then only the URL is needed. This is clear that all tasks have been done and they can read the history of the requests below
 :::
-----
-
 
 ### Tip 4: Replying "Done" to huge tasks
 
-Ideally, [all PBI's should be done in less than 2 days](/create-PBIs-under-2-days). If you are given a task that is going to more than that, then split it by following [breaking up monster tasks](/do-you-send-tasks-one-email-at-a-time).
-
+Ideally, [all PBI's should be done in less than 2 days](/create-PBIs-under-2-days). If you are given a task that is going to take more time than that, then split it by following [breaking up monster tasks](/do-you-send-tasks-one-email-at-a-time).
 
 ### Tip 5: Don't consolidate emails
 
@@ -283,7 +205,7 @@ If you get multiple emails or tasks, don't consolidate them. **Reply to each ema
 
 There is no point in keeping emails that just clutter your inbox. You don't need to keep the original email because after you have replied "Done", there is a copy in "Sent Items". If you must keep an email, then move to your "Saved Items" folder.
 
-### Tip 7: When appropriate, use texts instead of images
+### Tip 7: When appropriate, use text instead of images
 
 ::: email-template  
 |          |     |
@@ -326,7 +248,14 @@ Figure: Good example - This "Done" uses text instead of an image so it is easier
 
 ### Tip 8: Handle an email once
 
-Follow a tip I got from my accounting days... "A sign of an efficient person is they handle a piece of paper once". When you get an email - don't just open it, have a quick look and close it with the idea that you will go back to it later. Read it, make a decision and do the action. Delete as many emails as you can on the first go.
+Follow a tip from Adam Cogan: 
+
+> During my accounting days we had large physical in-trays and you were always picking up papers, 
+> looking at them, deciding it’s ‘too hard to do right now’, and then picking up another piece of paper...
+> I learnt that a sign of an efficient person is that they handle a piece of paper once. 
+
+Likewise, when you get an email - don't just open it, have a quick look and close it with the idea that you will go back to it later. Read it, make a decision and do the action. Delete as many emails as you can on the first go. In the same vein, when you complete all tasks in an email, delete everything in that thread.
+
 
 ### Tip 9: Consider alternatives in a team environment
 
