@@ -1,6 +1,6 @@
 ---
 type: rule
-archivedreason: 
+archivedreason: Ugly rule, why aren't we advocating for EF? Refer to https://www.ssw.com.au/rules/why-to-use-entity-framework
 title: Do you use a DataAdapter to insert rows into your database?
 guid: 75a90696-0dce-4dae-a37c-6dedcd62d08a
 uri: do-you-use-a-dataadapter-to-insert-rows-into-your-database
@@ -10,6 +10,7 @@ authors:
   url: https://ssw.com.au/people/adam-cogan
 - title: Ryan Tee
   url: https://ssw.com.au/people/ryan-tee
+  noimage: true
 related: []
 redirects: []
 
