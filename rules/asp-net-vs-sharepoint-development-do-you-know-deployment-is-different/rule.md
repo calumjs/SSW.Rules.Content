@@ -1,24 +1,24 @@
 ---
+seoDescription: Deploying ASP.NET applications is straightforward with Xcopy or Visual Studio's "Publish website" feature. In contrast, SharePoint deployments require creating a solution package using tools like VSeWSS, updating and compiling files, testing on a staging server, and deploying to production.
 type: rule
-archivedreason: 
-title: ASP.NET vs SharePoint development - do you know deployment is different?
+archivedreason:
+title: ASP.NET vs SharePoint development - Do you know deployment is different?
 guid: 5670dd01-3d85-4374-adfd-f9bbf0f2ebb8
 uri: asp-net-vs-sharepoint-development-do-you-know-deployment-is-different
 created: 2009-06-16T00:59:28.0000000Z
 authors:
-- title: John Liu
-  url: https://ssw.com.au/people/john-liu
-- title: Jay Lin
-  url: https://ssw.com.au/people/jay-lin
+  - title: John Liu
+    url: https://ssw.com.au/people/john-liu
+  - title: Jay Lin
+    url: https://ssw.com.au/people/jay-lin
 related: []
 redirects: []
-
 ---
 
-In ASP.NET deployment is a simple xcopy. Or you can right click the Web Site project and  "Publish Web Site" in Visual Studio.
+In ASP.NET deployment is a simple xcopy. Or you can right click the website project and "Publish website" in Visual Studio.
 
 ::: good  
-![Figure: Publish Web Site in Visual Studio](PublishWebSite.png)  
+![Figure: Publish website in Visual Studio](PublishWebSite.png)  
 :::
 
 <!--endintro-->

@@ -1,4 +1,5 @@
 ---
+seoDescription: Find a staff member's phone number using Dynamics 365 or avoid outdated methods like Active Directory.
 type: rule
 title: Do you know the best way to find a phone number of a staff member?
 uri: do-you-know-the-best-way-to-find-a-phone-number-of-a-staff-member
@@ -8,7 +9,7 @@ authors:
 related: []
 redirects: []
 created: 2011-04-01T07:25:10.000Z
-archivedreason: null
+archivedreason: Replaced by SugarLearning item https://my.sugarlearning.com/SSW/items/12987/find-an-employees-phone-number
 guid: acc44475-f894-4480-8bb5-500979a4a801
 ---
 

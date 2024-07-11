@@ -1,4 +1,5 @@
 ---
+seoDescription: Office environment dress code - Follow company guidelines to present a professional image, reinforce branding, and create a good impression for clients.
 type: rule
 title: Office environment - Do you follow the company's dress code?
 uri: do-you-have-a-dress-code
@@ -14,6 +15,7 @@ created: 2012-09-25T17:57:39.000Z
 archivedreason: null
 guid: b07a6598-7717-4851-af8d-30bf26cd2486
 ---
+
 The way you and all members of your team present themselves is a crucial part of creating a good impression for your clients, particularly in their first encounters with you.
 
 <!--endintro-->
@@ -31,12 +33,12 @@ Of course, when in a public event such as a User Group, conference or seeing cli
 
 It should go without saying, but of course, things such as shaving off your weekend facial growth, using deodorant and having clean teeth and nice breath is assumed.
 
-![Figure: "There is nothing wrong with being the best-dressed man in the room." - Sean Connery](sean-connery\_dressed-up.jpg)
+![Figure: "There is nothing wrong with being the best-dressed man in the room." - Sean Connery](sean-connery_dressed-up.jpg)
 
 ### On a business flight
 
 It's a good idea to "Dress Up" in flights as you never know who you will be seated next to.\
-![Figure: Why dress up in a flight](dresscode-linkedin.PNG)  
+![Figure: Why dress up in a flight](dresscode-linkedin.PNG)
 
 ### Dressing Down (aka Casual Fridays)
 
@@ -45,11 +47,11 @@ Many companies find it a good idea to have Casual Fridays. It is free and easy t
 ::: greybox
 At SSW employees can optionally work from home Monday/Tuesday, then **"dress up"** on Wednesdays by wearing company colors, with a nice shirt (business or polo), trousers (not blue jeans), belt, nice shoes (no sneakers, joggers or thongs). So most employees wear their SSW shirts or SSW T-shirts on Wednesdays.
 
-Then they **"dress down"** later in the week... so they have **"Casual Thursday"** and **"Fun Friday"**.
+Then they **"dress down"** later in the week... so they have **"Casual Thursday"** and **"Fun Friday"**. Thursdays are for casual clothes. On Fridays, employees are encouraged to wear sporty clothes such as shorts. It allows the end of the week to be fun.
 
 * [@SSW_TV tweet](https://twitter.com/SSW_TV/status/1103567355836153862?ref_src=twsrc%5Etfw)
 * [SSW Dress Code poster download (internal only)](https://sswcom.sharepoint.com/:b:/s/SSWDESIGN/EfVEIVvnUK5EoEE22SnqtskBlSE3nryQTkLDTjsfGrTV-Q?e=xilv3b)
-:::
+  :::
 
 ![Figure: SSW Dress Code poster](SSW-Dresscode-Poster-v2.png)
 
@@ -57,14 +59,14 @@ Then they **"dress down"** later in the week... so they have **"Casual Thursday"
 
 On very hot days, shorts are allowed as soon as you've got an email like this:
 
-::: email-template 
-|          |     |
+::: email-template
+| | |
 | -------- | --- |
-| To:      | SSWAll |
+| To: | SSWAll |
 | Subject: | SSW Sydney - 🩳 Shorts Today! (Over 30) |
-::: email-content  
+::: email-content
 
-### Hi All,
+### Hi All
 
 The maximum temperature for today is 30.
 
@@ -83,12 +85,12 @@ Sophie
 
 -- Powered by SSW.Shorts --
 
-See the code: https://github.com/SSWConsulting/SSW.Shorts
+See the code: <https://github.com/SSWConsulting/SSW.Shorts>
 
-&lt;This email was sent as per: [https://rules.ssw.com.au/do-you-have-a-dress-code](/do-you-have-a-dress-code)&gt;
+\<This email was sent as per [https://ssw.com.au/rules/do-you-have-a-dress-code](/do-you-have-a-dress-code)\>
 
 :::  
 :::
 ::: good
-Figure: Good example - Nice "Shorts Day" email template by SSW.Shorts 
+Figure: Good example - Nice "Shorts Day" email template by SSW.Shorts
 :::

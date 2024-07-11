@@ -1,4 +1,5 @@
 ---
+seoDescription: Make newcomers feel welcome by setting a reminder to check their accounts, ensuring required equipment, assigning an induction buddy, and planning a friendly hello on their first day.
 type: rule
 title: Starting - Do you know how to make newcomers feel welcome?
 uri: make-newcomers-feel-welcome
@@ -14,6 +15,7 @@ created: 2017-02-16T04:13:21.000Z
 archivedreason: null
 guid: be4b7750-805a-4704-a04b-1a6dd47f8e80
 ---
+
 The first day of a new job can be daunting. For the new starter, the workplace is unfamiliar, their colleagues are strangers, and there’s so much to learn they think their heads might explode. All up, it’s a stressful time.
 
 There are a few simple ways to help new hires feel more comfortable as they adjust to their new workspace:
@@ -22,13 +24,15 @@ There are a few simple ways to help new hires feel more comfortable as they adju
 
 ### Before they start
 
-**Active accounts** - Set a reminder to check if their accounts are activated before they start, by pinging them on Teams, saying hello and introducing yourself. E.g. “Hi I’m (your name), (your title). I just wanted to say hi, and to let you know to contact me if you need anything”.
+Check for:
 
-**Equipment Required** - Before the new employee starts, ensure you have any equipment ready that they might need. i.e. Laptop, Mouse etc. 
+**Active accounts** - Set a reminder to check if their accounts are activated before they start, by pinging them on Teams, saying hello and introducing yourself. E.g. “Hi I’m {{your name}}, {{your title}}. I just wanted to say hi, and to let you know to contact me if you need anything”.
 
-**Induction Buddy** - Before they start, you should make sure you have assigned someone to sit next to the new starter (when possible) for the first weeks to help them as much as possible. 
+**Required equipment** - Before the new employee starts, ensure you have any equipment ready that they might need. i.e. Laptop, Mouse etc.
 
-**Start Date** - Set an all-day appointment for the Induction Manager, Induction Buddy and SysAdmin to remind them of the new employees start date. 
+**Induction buddy** - Before they start, you should make sure you have assigned someone to sit next to the new starter (when possible) for the first weeks to help them as much as possible.
+
+**Start date** - Set a 30-minute appointment before the start of the day for the Induction Manager, Induction Buddy and SysAdmin to remind them of the new employee’s start date.
 
 **Friendly hello** - It's a great experience if they have already met a team member, prior to the start date, so they have a friendly face to go to! We recommend the Induction Buddy to set up a 15-minute virtual coffee catch-up to introduce themselves and say hello (tip: you can use whatever comms tool your company uses, like Teams or Slack). Order them some coffee/breakfast delivery e.g. Uber Eats for an extra touch for this call! This experience also works for remote employees.
 
@@ -36,8 +40,8 @@ There are a few simple ways to help new hires feel more comfortable as they adju
 
 **Plan to welcome on the day** - Make sure a team member will be there to greet them on the day!
 
-::: good 
-![Figure: Good Example - Nice and clean work area](Welcome-Shot.jpg)
+::: good
+![Figure: Good example - Nice and clean work area](desk-welcome.jpg)
 :::
 
 ### The day before they start
@@ -52,12 +56,12 @@ On the newcomer’s first day, have the manager leave a short “welcome to the 
 
 Other nice ideas could include:
 
-* A mug ☕
-* A map of the area with some cool things pointed out (good coffee spots, restaurants, etc.) 🗺️
-* Use a blank notebook to write a welcome note and put handy hints inside, then they can continue to use the notepad during induction! 📓
+- A mug ☕
+- A map of the area with some cool things pointed out (good coffee spots, restaurants, etc.) 🗺️
+- Use a blank notebook to write a welcome note and put handy hints inside, then they can continue to use the notepad during induction! 📓
 
-::: good\
-!\[Figure: Good example - A personal, fun welcome to SSW Sydney with all of the good food and coffee tips!](Penny Welcome Pic.jpg)
+::: good
+![Figure: Good example - A fun welcome to SSW Sydney with all of the good food and coffee places in an AOI map!](MicrosoftTeams-image (70).png)
 :::
 
 It’s also a nice idea to take the newbie out to lunch on their first day so they can get to know their co-workers outside of the office.\

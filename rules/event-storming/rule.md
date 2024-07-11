@@ -14,16 +14,17 @@ related:
   - event-storming-workshop
 created: 2022-07-04T07:46:30.373Z
 guid: 9d76ab58-ad71-4cb1-af08-68330f7e3a8e
-
 ---
 
 Often when building systems it isn't super clear what all the nuts and bolts should be. The complexity of projects can vary quite a lot - and getting customers to tell us what they need is not easy. There might be several major stakeholders or domain experts each with slightly different ideas understanding that causes contention in how the system functions. Being a good consultant requires good listening and then good analytical skills to determine the customer's technical needs.
 
-[Event Storming](https://www.eventstorming.com/) is a fun collaborative modeling technique invented by [Alberto Brandolini](https://twitter.com/ziobrando) that enables members from different teams and disciplines to participate in workshops to learn how to break down complex business domains and processes.  
+[Event Storming](https://www.eventstorming.com) is a fun collaborative modeling technique invented by [Alberto Brandolini](https://twitter.com/ziobrando) that enables members from different teams and disciplines to participate in workshops to learn how to break down complex business domains and processes.  
 
 <!--endintro-->
 
 `youtube: https://youtu.be/YeRfugbKuHk`
+
+**Video: Do you know the value of Event Storming? with William Liebenberg (6 min)**
 
 ### The benefits of Event Storming
 
@@ -44,7 +45,6 @@ There are multiple levels that Event Storming workshops can be run at. Each leve
 
 **Example events:**
 
-```
 🟧 InvoiceCreated
 
 🟧 InvoiceReceived
@@ -52,7 +52,7 @@ There are multiple levels that Event Storming workshops can be run at. Each leve
 🟧 EmailSent
 
 🟧 ReportUpdated
-```
+
 
 #### Process Modeling (aka 10,000 foot view)
 
@@ -65,7 +65,7 @@ There are multiple levels that Event Storming workshops can be run at. Each leve
 
 * Now we have an end-to-end model of the system
 * All relevant concepts are captured and documented
-* The software design phase can proceed using methods from Domain-Driven Design (DDD), [Clean Architecture](https://www.ssw.com.au/rules/rules-to-better-clean-architecture) and [CQRS](https://www.ssw.com.au/rules/use-the-mediator-pattern-with-cqrs). Each sticky note can potentially turn into a Product Backlog Item during the software development phase.
+* The software design phase can proceed using methods from Domain-Driven Design (DDD), [Clean Architecture](/rules-to-better-clean-architecture) and [CQRS](/use-the-mediator-pattern-with-cqrs). Each sticky note can potentially turn into a Product Backlog Item during the software development phase.
 
 ![Figure: Levels of Event Storming](event-storming-levels.png)
 
@@ -77,25 +77,25 @@ To start an Event Storming workshop, get all the stakeholders, domain experts an
 
 From here everyone starts to write out all the events they think are necessary on the sticky notes and put the sticky notes on the *real* or *virtual* wall. 
  
-Check out the [Do you know how to run an Event Storming workshop?](/event-storming-workshop) for detailed steps and more information on how to prepare and run an Event Storming workshop.
+Check out [how to run an Event Storming workshop](/event-storming-workshop) for detailed steps and more information on how to prepare and run an Event Storming workshop.
 
 ### Key concepts in Event Storming
 
 Different colored sticky notes should be used to denote different concepts:
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(255,102,0);"/></svg> **Domain Events** - Orange  
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(255,102,0);"/></svg> **Domain Events** - Orange  
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(255,255,153);"/></svg> **Actors (aka Personas)** - Light Yellow  
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(255,255,153);"/></svg> **Actors (aka Personas)** - Light Yellow  
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(255,0,148);"/></svg> **Policies (aka Business Process)** - Pink  
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(255,0,148);"/></svg> **Policies (aka Business Process)** - Pink  
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(0,51,255);"/></svg> **Commands** - Blue  
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(0,51,255);"/></svg> **Commands** - Blue  
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(255,204,0);"/></svg> **Aggregate** - Yellow  
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(255,204,0);"/></svg> **Aggregate** - Yellow  
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(102,0,153);"/></svg> **External System** - Purple 
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(102,0,153);"/></svg> **External System** - Purple 
 
-<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x=0.2rem y=0em style="fill:rgb(0,153,0);"/></svg> **Read Model** - Green
+<svg width="1.4em" height="1em" style="display: inline-block;"><rect width="1em" height="1em" rx="0.15em" ry="0.15em" x="0.2rem" y="0em" style="fill:rgb(0,153,0);"/></svg> **Read Model** - Green
 
 You can use whatever colors you can find, as long as a legend is always visible to the team.
 

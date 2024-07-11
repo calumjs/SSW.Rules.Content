@@ -19,7 +19,7 @@ Giving a live presentation in front of an audience can be daunting, whether onli
 
 <!--endintro-->
 
-### Key Points to remember:
+### Key Points to remember
 
 1. Make time for adequate preparation – structure & learn your content well and then rehearse the delivery for a given audience and context until you are getting it right more often than you are getting it wrong.  Don’t wait until the last minute!  If you are well prepared you can focus on your delivery instead of worrying about knowing your content or running a demo.
 
@@ -29,7 +29,7 @@ Giving a live presentation in front of an audience can be daunting, whether onli
 
 **Figure: Bad example – Ill prepared and low energy, (FYI he shows you how to fix it though)**
 
-::: 
+:::
 
 `youtube: https://youtu.be/nPIAiPhKtvc`
 
@@ -45,7 +45,7 @@ Giving a live presentation in front of an audience can be daunting, whether onli
 
 ![](picture3.jpg)
 
-### Mistakes happen and that's OK!
+### Mistakes happen and that's OK
 
 Even the most practiced presenters will slip up, but what separates professionals from amateurs is how you deal with it.
 
@@ -56,15 +56,27 @@ For more information about gaining exposure to pressure situations and avoiding 
 
 **Links:**
 
-### Content:
+### Content
 
-<https://www.ssw.com.au/rules/rules-to-better-powerpoint-presentations>
+[https://www.ssw.com.au/rules/rules-to-better-powerpoint-presentations](/rules-to-better-powerpoint-presentations)
 
 <https://www.linkedin.com/learning/speaking-confidently-and-effectively/great-speaking-skills-are-a-must-have> see “Give your audience only what they need to know”
 For more information on creating effective powerpoint slides, see:
 <https://www.linkedin.com/business/learning/blog/productivity-tips/5-best-practices-for-making-awesome-powerpoint-slides>
 
-### Delivery:
+### Delivery
+
+At its core, presentation delivery is about connection. It's about captivating attention, holding it steadfast, and guiding individuals through a transformative journey of thoughts and emotions. A well-refined delivery can elevate even the most mundane content, transforming it into an unforgettable experience that lingers in the minds of listeners long after the words have faded. 🤖
+
+A good way to achieve a strong delivery is to avoid using filler and non-words. Watch this video to get rid of your umms and ahhs.
+
+`youtube: https://youtu.be/mlDAO7DgJNk?si=17Dci0Ub-z_oZOE6`
+
+::: good
+
+**Figure: Good example - Using silence to strengthen your message.**
+
+:::
 
 <https://www.forbes.com/sites/carolkinseygoman/2012/02/13/seven-tips-for-effective-body-language-on-stage/?sh=20a9c335536d>
 

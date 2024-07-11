@@ -4,7 +4,7 @@ title: Do you store your GitHub secrets in Azure KeyVault?
 uri: store-github-secrets-in-keyvault
 authors:
   - title: Warwick Leahy
-    url: ssw.com.au/people/warwick-leahy
+    url: https://ssw.com.au/people/warwick-leahy
 created: 2022-10-27T21:38:53.087Z
 guid: 6191828c-2049-46ef-93f8-d5eb90426d56
 ---
@@ -19,9 +19,10 @@ Solution: Store them in Azure KeyVault.
 1. Create a seperate Resource Group in Azure
 2. Add 1 x shared KeyVault - These will store any values that would be the same no matter which environment you are deploying to.
 3. Add 1 KeyVault for each environment you will deploy to - These are to store any values that are specific to the development environment (i.e. dev, staging, prod)
-   :::good
-   ![Figure: Resource Group with 4 Azure KeyVaults ready to go](sharedconfigurationkeyvaults.png)
-   :::
+
+::: good
+![Figure: Resource Group with 4 Azure KeyVaults ready to go](sharedconfigurationkeyvaults.png)
+:::
 
 ### Use the KeyVaults in your CICD pipeline
 
@@ -49,7 +50,7 @@ resource environmentKeyVault 'Microsoft.KeyVault/vaults@2022-07-01' existing = {
 Then reference the value like this to provide parameters for other bicep modules:
 
 ``` json
-module azuredeployment 'azuredeploy.bicep' ={
+module azuredeployment 'environment-keyvault.bicep' ={
   name: '${projectName}-${lastDeploymentDate}'
   scope: resourceGroup()
   params: {
@@ -59,7 +60,7 @@ module azuredeployment 'azuredeploy.bicep' ={
     AppInsightsKey: environmentKeyVault.getSecret('myAppInsightsKey')
 }
 ```
-**Figure: Retrieve KeyVault Secrets using Bicep **
+**Figure: Retrieve KeyVault Secrets using Bicep**
 
 3. PowerShell - Access the same secrets directly from PowerShell:
 

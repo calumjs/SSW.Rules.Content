@@ -1,17 +1,19 @@
 ---
+seoDescription: Schedule supplier payments efficiently using Xero and improve cash flow management by automating your accounting processes.
 type: rule
 title: Expenses - Do you use Xero to schedule supplier payments?
 uri: do-you-schedule-supplier-payments
 authors:
   - title: Nick Viet
     url: https://ssw.com.au/people/nick-viet
+  - title: Stephan Fako
+    url: https://www.ssw.com.au/people/stephan-fako
 related: []
 redirects:
   - do-you-use-xero-to-schedule-supplier-payments
 created: 2020-11-20T03:09:16.000Z
 archivedreason: null
 guid: a533a4f4-46db-4c9d-9373-9187a6941958
-
 ---
 
 Making payments should not require too much admin and the systems in place should mean making payments becomes a standard process. Most businesses should have an accounts department to handle payments and supplier relationships.
@@ -30,7 +32,7 @@ OR
 
 ![Figure: Use Xero Expense for capturing bills or money spent](2020-11-20_15-09-45.png)
 
-Once the invoice is in the bill's section, you can schedule a planned payment date. 
+Once the invoice is in the bill's section, you can schedule a planned payment date.
 
 ![Figure: Scheduling area of unpaid bills](2020-11-20_15-00-03.png)
 

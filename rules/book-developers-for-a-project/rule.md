@@ -1,4 +1,5 @@
 ---
+seoDescription: Scheduling developers' time efficiently and effectively with Dynamics 365 and Outlook to ensure maximum productivity.
 type: rule
 title: Scheduling - Do you know how to book developers for a project?
 uri: book-developers-for-a-project
@@ -15,9 +16,10 @@ created: 2012-12-06T13:32:15.000Z
 archivedreason: null
 guid: 30fa45f9-d065-4f87-ba96-4ad52ae4468b
 ---
+
 It is the responsibility of Account Managers to book developers for known client work, however anyone can book a developer, including the developer themselves. Also if a developer notices they should be booked, but there's nothing in their calendar, and they can't figure out the below, as a minimum they should ask the Account Manager to book them.
 
-::: greybox  
+::: greybox
 
 **The Rule of the 3 T's**
 
@@ -32,11 +34,11 @@ Before booking developers, make sure you talk to them and check that they are co
 To see which developers are available for booking:
 
 ::: ok
-![Figure: OK Example - Using the Service Calendar, you can see who is and is not available at a given time](service-calendar-crm-online-version-blurred.png)
+![Figure: OK example - Using the Service Calendar, you can see who is and is not available at a given time](service-calendar-crm-online-version-blurred.png)
 :::
 
 ::: good
-![Figure: Good Example - Build a Power BI report to show the CRM data more succinctly](bookedindays.png)
+![Figure: Good example - Build a Power BI report to show the CRM data more succinctly](bookedindays.png)
 :::
 
 There are a few different ways of booking developers for project work, either via Outlook or the browser.
@@ -50,10 +52,8 @@ Prerequisite: [Do you install the Dynamics 365 App?](/install-the-2-add-ins)
 This is generally the easiest way for developers to book themselves in as they don't need to leave Outlook and 90% of the steps will already be familiar to them.
 
 1. Create a new Outlook appointment (in the Desktop or Web client) and give it a relevant subject
-2. Invite required resources if there are other people working with you or if you're booking for someone else
-
-* **Note:** If you're booking for someone else, just have them in the To box of the appointment. If you're booking yourself AND someone else, have both of you in the To box
-
+2. Invite required resources if there are other people working with you or if you're booking for someone else\
+   **Note:** If you're booking for someone else, just have them in the "To:" field of the appointment. If you're booking yourself AND someone else, have both of you in the To box
 3. Invite the client as optional. If you do this, also make it a Teams Meeting and add your email signature
 4. Set the time and location for your appointment
 5. Set "Show As" to "Free" (so their Teams Status will not show them as "In a Meeting" all day
@@ -67,7 +67,7 @@ This is generally the easiest way for developers to book themselves in as they d
 
 This is a backup option for anyone who doesn't have access to Outlook with the CRM add-in.
 
-1. Create new appointment in Dynamics 365 Online
+1. Create a new appointment in Dynamics 365 Online
 
 ![Figure: Click Appointment to create a new appointment in CRM](Dynamics-Calendar-App.jpg)
 
@@ -78,7 +78,7 @@ This is a backup option for anyone who doesn't have access to Outlook with the C
 6. Set the Start and End times
 7. If the booking is for more than 1 day, click “Recurrence” and set the frequency
 
-**Tip:** If you do not want the to block your calendar, you can change the organizer and owner to the developer you are booking. It will still track to the Service Calendar, but wont add it to your personal calendar, only the developers.
+**Tip:** If you do not want them to block your calendar, you can change the organizer and owner to the developer you are booking. It will still track to the Service Calendar, but won't add it to your personal calendar, only the developers.
 
 ![Figure: A complete CRM Appointment for a 1-day booking](Dynamics-Appointment.jpg)
 
@@ -89,9 +89,9 @@ Sometimes you may want to reserve a consultant for an appointment but are not ab
 To create a Tentative Booking:
 
 1. Follow the same steps above to create the Appointment
-2. Instead of choosing a client account for 'Set Regarding', choose the company (E.g. "ssw.pencilledin").
+2. Instead of choosing a client account for 'Set Regarding', create and use a pre-defined account for the purpose of tentative bookings (E.g.**SSW.PencilledIn**)
 
-**Tip:** Create a "Booked In Days" Report and make the Tentative Bookings display obviously (e.g. A grey color), so Account Managers can easily see it if they need to use that time.
+**Tip:** Create a "Booked In Days" Report and make the Tentative Bookings display obviously (E.g. a grey color), so Account Managers can easily see it if they need to use that time.
 
 ### Adding Internal Bookings
 
@@ -105,25 +105,43 @@ To book someone for internal work:
 
 ![Figure: Internally 'Booked' days show as black and 'Pencilled In' days show as grey](2020-03-20_10-49-19.png)
 
+### Deleting Bookings
+
+Cancelling an appointment in Outlook will not delete the appointment from Dynamics 365. Instead, you need to follow these steps:
+
+1. In the appointment, open the Dynamics 365 App
+2. Click on the menu next to **Tracked regarding**
+3. Click **Untrack**, then **Delete**
+4. Wait about a minute for Dynamics 365 to sync, then cancel the appointment
+
+![Figure: Outlook | Dynamics 365 App | Click Untrack and then Delete](dynamics-untrack.png)
+
+::: info
+You can't untrack a single occurrence of a series of appointments - instead, you need to cancel the occurrence and delete the appointment from Dynamics 365 manually.
+:::
+
 ### Using a separate Outlook calendar to book appointments
 
 If you have a lot of staff, it can be useful to use a separate calendar to make your bookings - this stops them from covering your everyday calendar and making it hard to read.
 
 Unfortunately, you cannot use a sub-folder to track appointments in Outlook. You need to create a whole new email account and then add it to your Outlook folder.
 
-Using the example of SSW's `crmtimeprosync@ssw.com.au` account, this account is used to add appointments to the Service Calendar, and these are then added through the SSWBookings calendar in Outlook:
+Using the example of SSW's **crmtimeprosync@** account, this account is used to add appointments to the Service Calendar, and these are then added through the SSWBookings calendar in Outlook:
 
 ![Figure: Appointments tracked from with Outlook desktop](Appointments tracked from Outlook desktop.png)
 
+**Note:** If using a separate Exchange calendar, it's highly recommended to login via Outlook Web Access (OWA) rather than loading it up as a shared calendar in your Outlook Desktop client. This is because it handles multiple users much better this way, and will avoid syncing issues.
+
 ### How to set it up
 
-**For OWA** 
-Open browser’s incognito mode | go to https://outlook.office.com | logon with the crmtimeprosync@ssw.com.au account
+**For OWA**
 
-**For Outlook Desktop** 
+Open browser’s incognito mode | go to <https://outlook.office.com> | logon with the **crmtimeprosync@** account
 
-Go to Files | Add an account | Restart Outlook once it completes 
+**For Outlook Desktop**
 
-![Figure: Add crmtimeprosync@ssw.com.au to your Outlook](Add account.jpg)
+Go to Files | Add an account | Restart Outlook once it completes
 
-Please note you will need to get the password from your friendly SysAdmins.
+![Figure: Add account to your Outlook](Add account.jpg)
+
+Please note you will need to get the password from your enterprise password manager.

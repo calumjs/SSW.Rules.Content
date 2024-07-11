@@ -1,18 +1,17 @@
 ---
 type: rule
-archivedreason: 
+archivedreason:
 title: Do you know the 3 commitments in Scrum (Product Goal, Sprint Goal, and Definition of Done)?
 guid: e74c37fd-b56f-41d3-9c4c-88693aafd95d
 uri: the-3-commitments-in-scrum
 created: 2020-12-04T00:27:09.0000000Z
 authors:
-- title: Ulysses Maclaren
-  url: https://ssw.com.au/people/ulysses-maclaren
+  - title: Ulysses Maclaren
+    url: https://ssw.com.au/people/ulysses-maclaren
 related: []
 redirects:
-- do-you-know-the-3-commitments-in-scrum-product-goal-sprint-goal-and-definition-of-done
-- do-you-know-the-3-commitments-in-scrum-(product-goal-sprint-goal-and-definition-of-done)
-
+  - do-you-know-the-3-commitments-in-scrum-product-goal-sprint-goal-and-definition-of-done
+  - do-you-know-the-3-commitments-in-scrum-(product-goal-sprint-goal-and-definition-of-done)
 ---
 
 Each step of Scrum is designed to take you towards an outcome, and this is built upon 3 levels of commitment:
@@ -26,15 +25,19 @@ This is the commitment at the Product Backlog level. It is defined by the Produc
 ::: greybox
 The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define “what” will fulfill the Product Goal.
 
-*"A product is a vehicle to deliver value. It has a clear boundary, known stakeholders, well-defined users or customers. A product could be a service, a physical product, or something more abstract."*
+_"A product is a vehicle to deliver value. It has a clear boundary, known stakeholders, well-defined users or customers. A product could be a service, a physical product, or something more abstract."_
 
 The Product Goal is the long-term objective for the Scrum Team. They must fulfill (or abandon) one objective before taking on the next.  
 :::
 **Excerpt from [The Scrum Guide](https://scrumguides.org/scrum-guide.html)**
 
+::: info
+**Tip:** Make it easy to find your Product Goal by documenting it in the README of your project.
+:::
+
 ### Sprint Goal
 
-This is the commitment at the Sprint Backlog level. It is negotiated between the Product Owner and the Team, and defines the “why” of the sprint, and how it will help the product eventually reach the Product Goal.
+This is the commitment at the Sprint Backlog level. It is negotiated between the Product Owner and the Team, and defines the “why” of the Sprint, and how it will help the product eventually reach the Product Goal.
 
 ::: greybox
 The Sprint Goal is the single objective for the Sprint. Although the Sprint Goal is a commitment by the Developers, it provides flexibility in terms of the exact work needed to achieve it. The Sprint Goal also creates coherence and focus, encouraging the Scrum Team to work together rather than on separate initiatives.

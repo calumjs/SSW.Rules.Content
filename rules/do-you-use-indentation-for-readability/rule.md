@@ -1,6 +1,9 @@
 ---
 type: rule
 title: Do you use indentation for readability?
+seoDescription: Learn how to enhance your email communication by using
+  indentation for readability. Discover tips and tricks to effectively reply to
+  emails and improve understanding.
 uri: do-you-use-indentation-for-readability
 authors:
   - title: Adam Cogan
@@ -28,18 +31,20 @@ Written communication can easily cause misunderstandings. Help the reader unders
 
 This way you won't forget any questions in the original email.
 
+**Note:** You do not need to use ">" and indentation, when you are replying to the task that is very clear, because in this case extra text reduces clarity.
+
 ::: email-template
-|          |     |
+| | |
 | -------- | --- |
-| To:      | Adam |
+| To: | Adam |
 | Subject: | RE: Change on Northwind app |
-::: email-content  
+::: email-content
 
 ### Hi Adam,
 
-Please change from X to Y  
-The program flow logic worries me a bit  
-Done. Sorry, this wasn't a final decision - I just put it there for testing purposes 
+Please change from X to Y\
+The program flow logic worries me a bit\
+Done. Sorry, this wasn't a final decision - I just put it there for testing purposes
 
 :::
 :::
@@ -48,22 +53,43 @@ Figure: Bad example - There's too much information with no reasonable order
 :::
 
 ::: email-template
-|          |     |
+| | |
 | -------- | --- |
-| To:      | Adam |
+| To: | Adam |
 | Subject: | RE: Change on Northwind app |
-::: email-content  
+::: email-content
 
 ### Hi Adam,
 
-&nbsp;&nbsp;&nbsp; \> 1. Please change from X to Y
+&nbsp;&nbsp;&nbsp; > 1. Please change from X to Y\
+Done - {{ LINK }}\
+&nbsp;&nbsp;&nbsp; > 2. The program flow logic worries me a bit\
+Sorry, this wasn't a final decision - I just put it there for testing purposes
 
-Done - \[add a link to the page or a screenshot];
+:::
+:::
+::: bad
+Figure: Bad example - Even with order, without spacing the text becomes cramped and hard to read.
+:::
 
+::: email-template
+| | |
+| -------- | --- |
+| To: | Adam |
+| Subject: | RE: Change on Northwind app |
+::: email-content
 
-&nbsp;&nbsp;&nbsp; \> 2. The program flow logic worries me a bit
+### Hi Adam,
 
-Sorry, this wasn't a final decision - I just put it there for testing purposes  
+&nbsp;&nbsp;&nbsp; > 1. Please change from X to Y
+
+Done - {{ LINK }}
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; > 2. The program flow logic worries me a bit
+
+Sorry, this wasn't a final decision - I just put it there for testing purposes
 
 :::
 :::
@@ -75,9 +101,13 @@ Figure: Good example - You can clearly see the context of each part of the reply
 
 **Tip #1:** When using Outlook, the raw “>” character may be automatically formatted to a “>” bullet point. This change is a problem because it may change to a normal bullet point after being sent. To prevent this issue, press Control+Z to turn it back into the raw “>” character.
 
-**Tip #2:** For those using mobile devices the indentation function is not available, try instead using 3 spaces to indent manually. 
+**Tip #2:** For those using mobile devices the indentation function is not available, try instead using 3 spaces to indent manually
 
-**Tip #3:** For extra clarity, consider changing the text color of questions from answers. This is especially useful for long emails.
+**Tip #3:** Note the extra line break after each reply... this helps group each question with it's answer
+
+**Tip #4:** If you're quoting someone who already used >, you can use >>
+
+**Tip #5:** Some people also [use a different text color in their reply](/when-you-reply-inline-do-you-use-a-different-color), but this is generally overkill
 
 :::
 
@@ -91,10 +121,4 @@ When using Markdown (usually on GitHub), use a "&gt;" symbol to achieve a simila
 
 You can find more info about GitHub Markdown syntax at [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-- - -
-
-`youtube: https://www.youtube.com/embed/LAqRokqq4jI`
-
-**Video: Top 10+ Rules to Better Email Communication with Ulysses Maclaren**
-
-**Note:** Some people also [use a different text color in their reply](/when-you-reply-inline-do-you-use-a-different-color), but this is generally overkill
+**Video:** [Top 10+ Rules to Better Email Communication with Ulysses Maclaren](https://www.youtube.com/watch?v=LAqRokqq4jI)

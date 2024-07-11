@@ -6,13 +6,12 @@ uri: rules-to-better-sharepoint
 index:
 - do-you-know-what-are-the-sharepoint-features-our-customers-love
 - do-you-know-how-to-get-the-sharepoint-version
-- the-best-outlook-add-in-to-get-the-most-out-of-sharepoint
 - fix-search-with-office-app-preview
 - do-you-know-how-to-create-a-link-to-a-url-in-sharepoint
 - do-you-know-how-to-resolve-the-broken-links-caused-by-page-renaming
 - do-you-use-access-request-on-your-sharepoint-site
 - do-you-clean-useless-calendars-in-sharepoint
-- do-you-confirm-there-is-no-checked-out-data
+- no-checked-out-files
 - do-you-know-how-to-delete-orphaned-users-from-the-people-picker
 - do-you-use-content-query-web-part
 - keep-sharepoint-databases-in-a-separate-sql-instance
@@ -29,6 +28,8 @@ index:
 - sharepoint-flat-hierarchy
 - use-icons-sharepoint
 - consistent-sharepoint-sites
+- do-you-use-sharepoints-news-feature
+- sharepoint-usage
 
 ---
 

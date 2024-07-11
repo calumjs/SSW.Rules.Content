@@ -5,10 +5,13 @@ guid: bcfd0c99-da62-465f-9bd6-aa437f80486b
 uri: rules-to-better-security-end-users
 index:
 - security-best-practices-for-end-users-and-sysadmins
+- password-manager
+- secure-password-share
+- password-sharing-practices
+- store-sensitive-information-securely
 - update-operating-system
 - windows-security
 - virus-threat-protection
-- password-manager
 - password-complexities
 - important-password-aspect
 - password-ages

@@ -1,4 +1,5 @@
 ---
+seoDescription: Better late than never! Respond to emails and IM messages, no matter how long it takes, to show you value the sender's input and ideas.
 type: rule
 title: Do you know replying is better late than never?
 uri: better-late-than-never
@@ -7,20 +8,20 @@ authors:
     url: https://ssw.com.au/people/adam-cogan
   - title: Cameron Shaw
     url: https://ssw.com.au/people/cameron-shaw
-related: []
+related:
+  - replying-in-the-same-medium
 redirects:
   - do-you-think-when-replying-to-emails-its-better-late-than-never
 created: 2009-03-27T02:52:19.000Z
 archivedreason: null
 guid: 09d05330-27de-41b1-803c-0dfc67b752ff
-
 ---
 
 You should always try and reply to emails and IM messages within a timely period, but this is not always possible.
 
 Sometimes people see a 6-month old task/question, and just delete/ignore thinking it's "too old"... or because "the customer will think we're a joke taking this long to do something!" No matter how long it takes to do some tasks, it's always better to get it done.
 
-<!--endintro--> 
+<!--endintro-->
 
 Of course, there are tasks that can be irrelevant with the passage of time. You should still reply and state that you don't believe it is needed anymore.
 
@@ -74,10 +75,4 @@ Checked and this task was already done a few months ago
 :::
 ::: good
 Figure: Good example - Informing a task was already done
-:::
-
-::: info
-**Remember to reply 'done' on all forms of communication**
-
-If the requester chases you up on IM about an email... when you finish the task you should reply on both mediums.
 :::

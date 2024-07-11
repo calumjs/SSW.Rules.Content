@@ -7,6 +7,7 @@ index:
 - do-you-use-a-secure-remote-access-vpn
 - do-you-assume-catastrophic-failure-before-touching-a-server
 - do-you-check-your-dns-settings
+- separate-networks
 - check-your-teams-backup-status
 - do-you-disable-automatic-windows-update-installations
 - do-you-have-a-consistent-naming-convention-for-each-machine
@@ -23,7 +24,7 @@ index:
 - how-to-find-your-mac-address
 - do-you-use-network-intrusion-prevention-systems
 - do-you-know-how-to-setup-a-pptp-vpn-in-windows-7
+- what-is-dns
 
 ---
 Networks are the lifeblood of any business. This is why we have developed a few rules for better Internet and Networks.
-

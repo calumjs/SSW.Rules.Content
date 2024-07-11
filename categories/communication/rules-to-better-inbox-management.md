@@ -5,7 +5,9 @@ guid: 11a99a6a-bfd5-49e0-bd02-c109a32e784d
 uri: rules-to-better-inbox-management
 index:
 - clean-your-inbox-per-topics
-- dones-do-you-reply-done-and-delete-the-original-email
+- handle-noise-email
+- do-you-save-important-items-in-a-separate-folder
+- reply-done-and-delete-the-email
 - how-to-hand-over-tasks-to-others
 - do-you-sort-your-emails-by-received-and-important
 - use-conditional-formatting-to-visually-deprioritize-emails
@@ -13,8 +15,8 @@ index:
 - do-you-group-your-emails-by-conversation-and-date
 - how-to-handle-duplicate-requests
 - the-touch-it-once-principle
-- do-you-save-important-items-in-a-separate-folder
 - do-you-unsubscribe-from-newsletters
+- inbox-management-team
 
 ---
 

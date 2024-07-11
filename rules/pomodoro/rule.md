@@ -1,4 +1,5 @@
 ---
+seoDescription: Master your focus and boost productivity with the Pomodoro Technique!
 type: rule
 title: Do you use the Pomodoro Technique?
 uri: pomodoro
@@ -11,6 +12,7 @@ authors:
 created: 2021-09-15T01:15:35.480Z
 guid: 78d3e725-0146-4759-a11b-8d9048c4f36a
 ---
+
 Getting difficult work done requires focus and there are many techniques to do that. This is why you should use the Pomodoro Technique.
 
 <!--endintro-->
@@ -27,7 +29,7 @@ A 25-minute Pomodoro session is considered by most long enough to get a little w
 
 **Video: Do you use the Pomodoro Technique? (16 min)**
 
-If you would like to find out more, check out [The Pomodoro® Technique website](https://francescocirillo.com/products/the-pomodoro-technique).
+If you would like to find out more, check out [The Pomodoro® Technique website](https://www.pomodorotechnique.com/).
 
 ### The traditional technique uses 6 steps
 
@@ -42,8 +44,8 @@ If you would like to find out more, check out [The Pomodoro® Technique website]
 
 A great application that encourages the use of the Pomodoro Technique is **Forest**.
 
-* [Download - App Store](https://apps.apple.com/au/app/forest-stay-focused/id866450515)
-* [Download - Google Play](https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_AU&gl=US)
+- [Download - App Store](https://apps.apple.com/au/app/forest-stay-focused/id866450515)
+- [Download - Google Play](https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_AU&gl=US)
 
 For those running Windows, you can [use focus sessions in Clock app](https://support.microsoft.com/en-us/windows/how-to-use-focus-in-windows-11-cbcc9ddb-8164-43fa-8919-b9a2af072382):
 ![Figure: Using Focus session in Windows](Microsoft-Windows-Focus-session.png)

@@ -1,4 +1,5 @@
 ---
+seoDescription: Azure resource naming best practices - Use lowercase letters, kebab case, and include environment details to ensure consistency and ease of management.
 type: rule
 title: Do you name your Azure resources correctly?
 uri: azure-naming-resources
@@ -22,6 +23,7 @@ created: 2020-06-25T22:36:42.000Z
 archivedreason: null
 guid: ff423950-2e2e-46b2-bfa5-ef9d69e83774
 ---
+
 `youtube: https://www.youtube.com/embed/sFpcaDicRlA`
 
 **Video: Hear from Luke Cook about how organizing your cloud assets starts with good names and consistency!**
@@ -34,17 +36,17 @@ guid: ff423950-2e2e-46b2-bfa5-ef9d69e83774
 
 Organizing your cloud assets starts with good names. It is best to be consistent and use:
 
-* All lower case 
-* Use [kebab case (“-“ as a separator)](https://www.ssw.com.au/rules/use-dashes-in-urls)
+* All lower case
+* Use [kebab case (“-“ as a separator)](/use-dashes-in-urls)
 * Include a [resource type abbreviation](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) (so it's easy to find the resource in a script)
-* Include which environment the resource is intended for i.e. [dev, test, prod, etc.](https://www.ssw.com.au/rules/do-you-have-separate-development-testing-and-production-environments)
-* If applicable, include the intended use of the resource in the name e.g. an app service may have a suffix *api*
+* Include which environment the resource is intended for i.e. [dev, test, prod, etc.](/do-you-have-separate-development-testing-and-production-environments)
+* If applicable, include the intended use of the resource in the name e.g. an app service may have a suffix _api_
 
 <!--endintro-->
 
 Azure defines [some best practices for naming and tagging your resource](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging).
 
-Having inconsistent resource names across projects creates all sorts of pain 
+Having inconsistent resource names across projects creates all sorts of pain
 
 * Developers will struggle to find a project's resources and identify what those resources are being used for
 * Developers won't know what to call new resources they need to create.
@@ -78,6 +80,6 @@ Instead, it is better to provision your Azure Resources programmatically via Inf
 
 You can also use policies to enforce naming convention adherance, and making this part of your pipeline ensures robust naming conventions that remove developer confusion and lower cognitive load.
 
-For more information, see our rule: [Do you know how to create Azure resources?](https://www.ssw.com.au/rules/azure-resources-creating)
+For more information, see our rule: [Do you know how to create Azure resources?](/azure-resources-creating)
 
-Want more Azure tips? [Check out our rule on Azure Resource Groups](https://www.ssw.com.au/rules/azure-naming-resource-groups).
+Want more Azure tips? [Check out our rule on Azure Resource Groups](/azure-naming-resource-groups).

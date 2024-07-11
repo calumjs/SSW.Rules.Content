@@ -1,4 +1,5 @@
 ---
+seoDescription: Develop a comprehensive disaster recovery plan to ensure business continuity and minimize data loss during catastrophic incidents.
 type: rule
 title: Do you have a disaster recovery plan?
 uri: disaster-recovery-plan
@@ -8,16 +9,17 @@ authors:
   - title: Matt Goldman
     url: https://www.ssw.com.au/people/matt-goldman
   - title: Kaique Biancatti
-    url: https://ssw.com.au/people/kiki
+    url: https://ssw.com.au/people/kaique-biancatti
 
 created: 2021-10-11T00:20:18.145Z
 guid: 0668c3fd-3946-42cc-8712-80a46712162d
 ---
+
 At some point every business will experience a catastrophic incident. At these times it is important to have a plan that explains who to contact, the priority of restore and how to restore services.
 
 At the time of a disaster, you should have a few objectives established and measure some results - The objectives are **RPO** (Recovery Point Objective) and **RTO** (Recovery Time Objective); and the measurements to take are **RPA** (Recovery Point Actual) and **RTA** (Recovery Time Actual).
 
-It's recommended to practice your disaster recovery at least once every 12 months. This way you make sure that you are investing in the minimum amount of required resources, and that your plan actually works.        
+It's recommended to practice your disaster recovery at least once every 12 months. This way you make sure that you are investing in the minimum amount of required resources, and that your plan actually works.
 
 <!--endintro-->
 
@@ -31,7 +33,7 @@ RPO or Recovery Point Objective, is a measure of the maximum tolerable amount of
 
 #### RTO
 
-RTO or Recovery Time Objective, is a measure of the amount of time after a disaster in which business operation is retaken, or resources are again available for use.  This measurement determines the amount of resources that are required for the recovery to happen within the timeframe required.
+RTO or Recovery Time Objective, is a measure of the amount of time after a disaster in which business operation is retaken, or resources are again available for use. This measurement determines the amount of resources that are required for the recovery to happen within the timeframe required.
 
 #### RPA
 
@@ -47,11 +49,11 @@ RTA or Recovery Time Actual, is the actual measurement of downtime during a disa
 
 ### How to calculate these values?\*\*
 
-RTO and RPO are determined via a consultation called BIA (Business Impact Analysis). The organization needs to work out what the maximum amount of data that they are prepared to lose and also the maximum amount of time that they are prepared to be without services. These are both measured in time, and could be seconds, minutes, hours or days depending on the organization's requirements. This is a balancing act as generally the shorter the timeframe required, the more resources the organisation will need in order to achieve the target.  
+RTO and RPO are determined via a consultation called BIA (Business Impact Analysis). The organization needs to work out what the maximum amount of data that they are prepared to lose and also the maximum amount of time that they are prepared to be without services. These are both measured in time, and could be seconds, minutes, hours or days depending on the organization's requirements. This is a balancing act as generally the shorter the timeframe required, the more resources the organisation will need in order to achieve the target.
 
 After this a disaster should be simulated to test that the RTA/RPA values match the RTO/RPO required by the organization.
 
-- - -
+---
 
 **Example:** Mr Bob Northwind experienced a catastrophic incident. The failure occurred at 8pm local time on a Friday night. Their website and sales transaction software were affected.
 
@@ -64,7 +66,7 @@ In his Disaster Recovery Plan he had the following objectives:
 
 ::::info
 
-It is important that these objectives are signed off by the product owner as per https://www.ssw.com.au/rules/do-you-ask-clients-to-initial-your-work
+It is important that these objectives are signed off by the Product Owner as per [this rule](/do-you-ask-clients-to-initial-your-work)
 
 ::::
 
