@@ -33,7 +33,7 @@ Making your website accessible ensures equal access, better usability, and impro
 
 ## An overview of WCAG standards
 
-The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are international standards developed by the WW3C's Web Accessibility Initiative (WAI). They define how to make web content more accessible to people with disabilities.
+The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are international standards developed by the W3C's Web Accessibility Initiative (WAI). They define how to make web content more accessible to people with disabilities.
 
 These guidelines are constantly reviewed and updated to make the web a more accessible place. Each version release has its own focus, and moves with evolving technologies. The current latest set of guidelines is the [WCAG 2.2](https://www.w3.org/TR/WCAG22/), released in December 2024.
 
