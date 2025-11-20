@@ -25,7 +25,7 @@ They have variations of sizes according to the placement, for example, banner, p
 
 <!--endintro-->
 
-As all of them will have different specifications, so it’s best to check their support if you have any questions regarding this. Hootsuite is a reliable source, for example, check this guide: [Social Media Image Sizes 2022: Cheat Sheet for Every Network](https://blog.hootsuite.com/social-media-image-sizes-guide/#). It is important to know this, as posting on social media with the correct dimensions impacts how engaging your posts will be.
+As all of them will have different specifications, so it’s best to check their support if you have any questions regarding this. Hootsuite’s November 2025 update is a reliable one-stop source: [Social Media Image Sizes 2025: Cheat Sheet for Every Network](https://blog.hootsuite.com/social-media-image-sizes-guide/#). It now calls out current dimensions such as Facebook cover photos at 851 × 315 px, X headers at 1500 × 500 px, Instagram Stories/Reels at 1080 × 1920 px, plus newly documented platforms like Threads (640 × 640 profile, 1440 × 1920 posts) and Bluesky (1000 × 1000 profile, 3000 × 1000 banner). Knowing these specs keeps your creative on-brand and prevents auto-cropping that hurts engagement.
 
 ### X (was Twitter)
 
@@ -94,3 +94,19 @@ On **[TikTok](https://www.tiktok.com)** they have the following variations for 
 
 * Profile photo size: 20 x 20 pixels (minimum size to upload)
 * Cover photo for your TikTok video (ideal ratio is 1:1 or 9:16)
+
+### Threads
+
+On [Threads](https://www.threads.net) keep these basics in mind:
+
+* Profile photo size: 640 x 640 pixels (cropped to a circle)
+* Recommended post image size: 1440 x 1920 pixels (native 3:4 ratio, 8 MB max file size)
+* Acceptable aspect ratios range widely (0.01:1 to 10:1), but sticking close to 4:5 or 9:16 avoids unexpected padding
+
+### Bluesky
+
+[Bluesky](https://bsky.app) specifications are finally documented, so update your templates accordingly:
+
+* Profile photo size: 1000 x 1000 pixels (displayed as a circle)
+* Banner image: 3000 x 1000 pixels, so keep key content centered for both desktop and mobile crops
+* Image posts: Longest side stored at 1000 pixels, so export at standard ratios (1:1, 9:16, 3:4, or 4:5) to minimize compression
