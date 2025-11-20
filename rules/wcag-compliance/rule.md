@@ -85,7 +85,7 @@ Suppose we want to create a simple button on our site.
 This fails numerous guidelines:
 
 * **Criteria 2.1.1:** Not operable by keyboard
-* **Criteria 4.2.1:** No accessible role/ name (for screen readers)
+* **Criteria 4.1.2 (Name, Role, Value):** No accessible role/name (screen readers can't identify it; SC 4.1.1 Parsing was removed in WCAG 2.2)
 * **Criteria 1.3.1:** Using div for a button breaks semantic structure
 
 ::: good
