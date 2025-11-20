@@ -1,5 +1,5 @@
 ---
-seoDescription: Learn about the top options for remote meetings, including Microsoft Teams, Zoom, Skype, and Skype for Business.
+seoDescription: Learn about the top options for remote meetings, including Microsoft Teams, Zoom, Skype, and Google Meet, plus guidance on the Skype for Business retirement.
 type: rule
 archivedreason:
 title: Communication - Do you know the options for remote meetings?
@@ -28,11 +28,13 @@ Microsoft Teams' winning feature is its tight integration with Office services a
 
 **[Zoom](https://zoom.us/)** – is the leader in modern enterprise video communication, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms.
 
-**Microsoft Teams** – Microsoft Teams came along and boasted some of the features that Skype for Business offered – predominantly persistent chat, instant messaging, individual and group voice/video calls, and scheduled meetings.
+**Microsoft Teams** – Microsoft Teams came along and boasted the best of Skype for Business – predominantly persistent chat, instant messaging, individual and group voice/video calls, and scheduled meetings – and keeps adding collaboration features inside Microsoft 365.
 
 **Skype** – an instant messaging app that provides online text messages and video chat services. Users may transmit both text and video messages and may exchange digital documents such as images, text, and video.
 
-**Skype for Business** – a solid communication product boasting multiple modalities and the ability to easily switch between them, as well as share a variety of content forms (e.g., desktop, application, whiteboard, poll).
+**Google Meet** – a browser-first video conferencing app that pairs neatly with Google Workspace (Gmail and Calendar), making it simple for clients who live in Google's ecosystem to join reliably from desktop or mobile.
+
+> Microsoft retired [Skype for Business Online](https://learn.microsoft.com/en-us/microsoftteams/skype-for-business-online-retirement) on July 31, 2021, and directs organizations to Microsoft Teams for ongoing support—so modernize any legacy meeting invites or documentation that still mentions Skype for Business.
 ![](skype chat.jpg)
 
 ::: bad
