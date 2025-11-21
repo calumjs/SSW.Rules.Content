@@ -1,7 +1,7 @@
 ---
 seoDescription: Use Google Tag Manager to manage your website's tags and tracking codes efficiently, without writing complex code.
 type: rule
-title: Do you use Google Tags Manager (GTM) to manage your tags?
+title: Do you use Google Tag Manager (GTM) to manage your tags?
 uri: use-google-tag-manager
 authors:
   - title: Penny Walker
@@ -36,15 +36,20 @@ Google Tag Manager is a tag management system (TMS) that allows you to quickly a
 ![Figure: Good example – Vimeo tracking code added through Google Tag Manager](tracking-code-good.png)
 :::
 
-Multiple marketing tools can be added in a website using Google Tag manager.
+Multiple marketing tools can be added to a website using Google Tag Manager.
 
 ![Figure: All tags are added in new SSW.Website using GTM](trracking-all-tags.png)
 
-Data and analytics result has recorded by Google Analytics on new SSW.Website. Universal Analytics and GA4 are configured in Google Tag Manager.
-
-![Figure: Universal Analytics is collecting data from the website](tracking-universal-analytics.png)
-
 ![Figure: GA4 is collecting data from the website](tracking-ga4.png)
+
+Standard Universal Analytics properties stopped processing new hits on July 1, 2023, and Universal Analytics 360 plus the remaining interface/API access shut down on July 1, 2024, so GA4 is now the only Analytics product that still records website data when you deploy it through Google Tag Manager ([Google Ads & Commerce update](https://blog.google/products/ads-commerce/upgrade-to-google-analytics-4-before-july-1/), [Google Analytics 360 update](https://blog.google/products/ads-commerce/google-analytics-360-ga4-update/)).
+
+#### GA4 migration tips for Google Tag Manager
+
+- Before July 1, 2024 export the historical UA reports you still need and switch any Google Ads conversions or audiences that relied on UA over to the GA4 equivalents so bidding and remarketing keep working without interruption ([Google Ads & Commerce update](https://blog.google/products/ads-commerce/upgrade-to-google-analytics-4-before-july-1/), [Google Analytics 360 update](https://blog.google/products/ads-commerce/google-analytics-360-ga4-update/)).
+- Audit your container to remove or pause Universal Analytics tags, confirm the GA4 Configuration (now Google tag) fires on all pages, uses the correct Measurement ID, and is published after every change to avoid gaps in reporting ([GA4 troubleshooting guide](https://support.google.com/analytics/answer/9311124?hl=en-EN)).
+- Use the GA4 Setup Assistant to generate the property and data stream, then follow the Tag Manager instructions to add the GA4 Configuration tag and test in Realtime/DebugView before rolling out additional event tags ([GA4 setup guide](https://support.google.com/analytics/answer/9304153?hl=en-IR)).
+- Keep the rest of your marketing tags inside Google Tag Manager so you can manage consent, sequencing, and enhancements such as the upgraded Google tag without touching the site code again ([Tag Manager vs. gtag.js comparison](https://support.google.com/tagmanager/answer/7582054?hl=en-gb)).
 
 Learn more on [Google Tag Manager official site](https://marketingplatform.google.com/about/tag-manager/benefits/).
 
