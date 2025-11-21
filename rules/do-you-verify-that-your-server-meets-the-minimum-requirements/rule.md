@@ -11,30 +11,20 @@ related: []
 redirects: []
 ---
 
-Whenever you upgrade software, it's a good idea to make sure that your system meets the requirements for the newer version. This is particularly important for server applications like Team Foundation Server.
+Whenever you upgrade infrastructure software, double-check that your servers, clients, SQL tiers, and build agents meet the requirements for the version you are deploying. This is especially important for Team Foundation Server (TFS) and its successor, Azure DevOps Server, because each release tightens the list of supported operating systems, databases, and hardware profiles.
 
-If you're upgrading from TFS 2013 Update 4 to TFS 2015, there is a small difference in system requirements. Make sure that your system meets the [Visual Studio Team Foundation Server 2015 RC](https://www.visualstudio.com/en-us/visual-studio-2015-system-requirements-vs#VSTFS_RC) system requirements:
+Team Foundation Server 2015 leaves extended support on October 14, 2025, so stop validating against old release-candidate requirements and plan your upgrade path to Azure DevOps Server 2022.2 or the newly rebranded “Azure DevOps Server” (no year) now ([Azure DevOps lifecycle update](https://devblogs.microsoft.com/devops/upcoming-support-lifecycle-milestones-for-older-on-premises-products/), [Microsoft lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/visual-studio-team-foundation-server-2015), [branding announcement](https://devblogs.microsoft.com/devops/announcing-the-new-azure-devops-server-rc-release/)). That upgrade path is fully supported directly from TFS 2015, so there is no benefit in holding onto prerelease artifacts that no longer exist.
 
 <!--endintro-->
 
-**Server Supported Operating Systems**
+**What to validate today**
 
-- Windows Server 2008 R2 SP1
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Small Business Server 2011
+* Confirm your platform against the current [Azure DevOps Server requirements](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-2022). Azure DevOps Server 2022.x supports Windows Server 2022 or Windows Server 2019 for the application tier, Windows 11 Version 21H2 or Windows 10 1809+ for clients, and the latest “Azure DevOps Server” build adds Windows Server 2025 support, so align your plans with that matrix instead of obsolete RC guidance.
+* Use the same [requirements doc](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-2022) to size hardware realistically: Microsoft recommends a single-server deployment with an octa-core CPU, 16 GB RAM, and SSD storage (plus two dual-core CPUs with 8 GB RAM for Elastic/Code Search), and calls for dedicated 16 GB SSD-backed application and data tiers once you grow beyond roughly 500 users.
+* Verify SQL Server support (Azure SQL Database, Azure SQL Managed Instance, SQL Server 2022, or SQL Server 2019) and keep build/test agents off the application tier so automated workloads never starve the core service. Use the [requirements matrix](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-2022) to match supported versions before every upgrade.
 
-**Client Supported Operating Systems**
+**Practical workflow**
 
-- Windows 7 Service Pack 1
-- Windows 8.1
-- Windows 8
-- Windows 10 Technical Preview
-
-**Hardware Requirements**
-
-- 2.2 GHz or faster processor
-- 1 GB or more RAM
-- 8 GB or more of available hard disk space
-
-The old TFS 2013 Update 4 requirements are available at the following location: [Description of Visual Studio 2013 Update 4](https://support.microsoft.com/en-us/kb/2994375).
+* Before every upgrade, grab the current requirements article, compare it with your inventory (OS versions, SQL build, hardware specs, domain functional level), and create a punch list of gaps against Microsoft’s supported matrix ([requirements](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-2022)).
+* Run the upgrade in a pre-production environment using the latest Azure DevOps Server installer, resolve blockers (unsupported Windows releases, insufficient RAM, deprecated SQL versions), then cut over production once the dry run is stable ([Azure DevOps lifecycle update](https://devblogs.microsoft.com/devops/upcoming-support-lifecycle-milestones-for-older-on-premises-products/)).
+* After go-live, monitor the Azure DevOps Blog’s lifecycle posts for new deadlines so your environment never drifts back onto unsupported platforms ([Azure DevOps Blog](https://devblogs.microsoft.com/devops/)).
