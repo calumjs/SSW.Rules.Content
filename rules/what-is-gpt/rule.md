@@ -46,12 +46,10 @@ GPT is cool because it is a powerful artificial intelligence language model that
 
 ### How does GPT work?
 
-GPT models are trained on a huge amount of data (often refered to as parameters) that it can then use to predict what words should come next when given an input.  
+GPT models are trained on a huge amount of text and code. During training the neural network adjusts billions of parameters (learned weights and biases) that capture statistical patterns in that data—those parameters are not the same thing as the examples the model studied.[^1]  
 For example, if the training data contains a weather report talking about beautiful clear blue skies, when you ask it what color the sky is it can call back to that data and respond blue.
 
-GPT is trained on a huge amount of parameters.
-
-* GPT-4: 1.76 **trillion** parameters.
+* GPT-4: OpenAI has not disclosed the parameter count; the [GPT-4 Technical Report](https://cdn.openai.com/papers/gpt-4.pdf) explicitly withholds architecture details.[^2] Media outlets such as [Semafor](https://www.semafor.com/article/03/14/2023/openai-launches-new-version-of-chatgpt-called-gpt-4) have reported unverified estimates of around 1.7 trillion parameters, so treat any exact figure as speculative.[^3]
 * GPT-3: 175 billion parameters.
 * GPT-2: 1.5 billion parameters.
 * GPT-1: 117 million parameters.
@@ -67,3 +65,7 @@ GPT is trained on a huge amount of parameters.
 * The model is only as good as it's training data and has no knowledge of anything outside of this data.
 
 Try it out in the [playground](https://platform.openai.com/playground)
+
+[^1]: [Microsoft Learn – Introduction to neural networks](https://learn.microsoft.com/en-us/training/modules/introduction-neural-networks/4-understanding) explains that parameters are the adjustable weights and biases a neural network learns during training, which are distinct from the training samples.
+[^2]: OpenAI, [GPT-4 Technical Report](https://cdn.openai.com/papers/gpt-4.pdf), p. 2.
+[^3]: Semafor, [OpenAI launches new version of ChatGPT called GPT-4](https://www.semafor.com/article/03/14/2023/openai-launches-new-version-of-chatgpt-called-gpt-4), March 14, 2023.
