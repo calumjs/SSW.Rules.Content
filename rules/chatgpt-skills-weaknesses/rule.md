@@ -105,9 +105,13 @@ And there are also areas where it performs poorly.
 
 ## ❌ Dont use it for
 
-### 1. Non-textual information
+### 1. Multimodal inputs (voice, images, audio)
 
-It is not designed to process or generate images, audio, or other non-textual information.
+ChatGPT now supports images, screenshots, and voice conversations—GPT-4o brings text, voice, and vision interactions to every plan, though Free users have lower message caps while Plus, Team, and Enterprise get much higher limits, so lean on the built-in multimodal tools that match your subscription. [OpenAI announcement on GPT-4o access](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/)
+
+These capabilities let you show photos for troubleshooting or hold natural voice chats on mobile and desktop, but availability is still rolling out gradually and may require opting in. [OpenAI blog on ChatGPT seeing, hearing, and speaking](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak)
+
+Advanced Voice mode (with richer intonation and live translation) is currently limited to paid plans and still has known quirks like occasional audio artifacts, so confirm your plan limits and keep sensitive work outside any preview features. [OpenAI voice release notes, June 7, 2025](https://help.openai.com/en/articles/9624314-model-release-notes%3F.eps)
 
 ### 2. Mathematics
 
