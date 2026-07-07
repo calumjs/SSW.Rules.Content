@@ -1,0 +1,128 @@
+---
+type: rule
+title: "Do you create a Sprint Forecast email \U0001F4E9? (aka Functionality to be developed per Sprint Planning)"
+uri: sprint-forecast-email
+categories:
+  - category: categories/project-delivery/rules-to-better-scrum.mdx
+authors:
+  - title: Adam Cogan
+    url: 'https://www.ssw.com.au/people/adam-cogan'
+  - title: Christian Morford-Waite
+    url: 'https://www.ssw.com.au/people/christian-morford-waite'
+  - title: Eddie Kranz
+    url: 'https://www.ssw.com.au/people/eddie-kranz'
+  - title: Ivan Gaiduk
+    url: 'https://www.ssw.com.au/people/ivan-gaiduk'
+  - title: Michael Qiu
+    url: 'https://www.ssw.com.au/people/michael-qiu'
+related:
+  - rule: public/uploads/rules/what-happens-at-a-sprint-planning-meeting/rule.mdx
+  - rule: public/uploads/rules/sprint-review-retro-email/rule.mdx
+  - rule: public/uploads/rules/github-sprint-templates/rule.mdx
+  - rule: public/uploads/rules/definition-of-done/rule.mdx
+redirects:
+  - do-you-create-a-sprint-forecast-aka-the-functionality-that-will-be-developed-during-the-sprint
+  - sprint-forecast
+guid: f749bf03-8785-4433-a5c5-6c21cda9b782
+seoDescription: The functionality that will be developed during the Sprint confirms the relationship between the Product Owner and Development Team in Agile Project Management.
+created: 2025-11-27T04:04:17.000Z
+createdBy: 'Tiago Araújo [SSW]'
+createdByEmail: tiagov8@gmail.com
+lastUpdated: 2026-02-10T04:45:35.041Z
+lastUpdatedBy: Michael Qiu
+lastUpdatedByEmail: MichaelQiu@ssw.com.au
+isArchived: false
+archivedreason: null
+---
+
+After a [Sprint Planning meeting](/what-happens-at-a-sprint-planning-meeting), it's useful for the Team to send the Stakeholders a Sprint Forecast email 📩.
+
+This helps to improve common understanding in, and sometimes to enforce, the relationship between the PO and the Team.
+
+This is simply an agreement between the Team and the PO for that Sprint and should be confirmed via an email at the beginning of every Sprint.
+
+<endIntro />
+
+> “The implementation team agrees to do its best to deliver an agreed on set of features (scope) to a defined quality standard by the end of the Sprint. (Ideally they deliver what they promised, or even a bit more). The Product Owner agrees not to change his instructions before the end of the Sprint.”
+
+Each Sprint in a Scrum project can be considered a mini-project that has **time** (Sprint Length), **scope** (Sprint Backlog), **quality** ([Definition of Done](https://www.ssw.com.au/rules/definition-of-done)) and **cost** (Team Size \* Sprint Length). Only the scope can vary and this is measured every Sprint.
+
+You can improve the forecast by using AI tools 🤖 like Claude and Copilot to extract additional insights from a meeting transcript.
+
+<emailEmbed
+  from=""
+  to="&#123;&#123; PRODUCT OWNER &#125;&#125;"
+  cc=""
+  bcc=""
+  subject="&#123;&#123; CLIENT NAME &#125;&#125;: Sprint XXX Forecast"
+  shouldDisplayBody={true}
+  body={<>
+    ## Hi &#123;&#123; PRODUCT OWNER &#125;&#125;
+    
+    Sprint Goals (in priority order):
+    
+    * Bugfixes
+    * WDM Integration
+    * SSO/Roles APIs
+    * Download Documents APIs
+    
+    Please see below for a more detailed breakdown of the upcoming Sprint:
+    
+    |                        |                                      |
+    | ---------------------- | ------------------------------------ |
+    | Summary Recording:     | &#123;&#123; VIDEO URL &#125;&#125; (&#123;&#123; VIDEO LENGTH &#125;&#125;) |
+    | This Sprint:           | &#123;&#123; SPRINT NUMBER &#125;&#125;                  |
+    | Sprint Duration:       | &#123;&#123; NUMBER OF WEEKS &#125;&#125;                |
+    | Project:               | &#123;&#123; PROJECT NAME &#125;&#125;                   |
+    | Project Portal:        | &#123;&#123; LINK TO PROJECT PORTAL &#125;&#125;         |
+    | Product Owner:         | &#123;&#123; PRODUCT OWNER NAME &#125;&#125;             |
+    | Sprint Review Meeting: | &#123;&#123; DATE AND TIME &#125;&#125;                  |
+    | Attendees:             | &#123;&#123; NAMES OF THE ATTENDEES &#125;&#125;         |
+    
+    As per our Sprint Planning Meeting, and as the Product Owner, you have agreed to the following Product Backlog Items (PBIs) being included in the current Sprint backlog.
+    
+    The Team will do its best to deliver this set of features (Scope), to a defined quality standard (Definition of Done) by the end of the Sprint. Ideally, the team will deliver what they forecast, or even a bit more, but this can't be guaranteed.
+    
+    | ID    | Title                               | State           | Effort |
+    | ----- | ----------------------------------- | --------------- | ------ |
+    | 24124 | UI Improvements                     | 👀 In Review    | 4      |
+    | 24112 | Integrate Business Logic to MVC app | 🤷‍♂️ In Triage | 8      |
+    | 24097 | **Styling**                         | 🏗️ In Progress | 16     |
+    | 24103 | **UX Improvements**                 | 🏗️ In Progress | 8      |
+    
+    **Figure: The Sprint Backlog with the important items bolded**
+    
+    ### AI Stats - Claude 🤖
+    
+    ![Claude AI Sprint Meeting analytics dashboard showing 4 participants, 27 minute duration, 216 speaking turns, Sprint Goal of Search, and 4 done items](/uploads/rules/sprint-forecast-email/claude-stats.png)**Figure: Claude AI Stats** 🤖
+    
+    ### AI Stats - Copilot 🤖
+    
+    ![Copilot chat response identifying the next main item to focus on media management improvements and implement reliable telemetry for branch sync operations](/uploads/rules/sprint-forecast-email/copilot-stats.png)**Figure: Copilot AI Stats - Main item to do next** 🤖
+    
+    &lt;This is as per rule: [Do you create a Sprint Forecast?](/sprint-forecast)&gt;
+  </>}
+  figurePrefix="good"
+  figure="Copy this as email template and send to Product Owner"
+/>
+
+<boxEmbed
+  style="tips"
+  body={<>
+    **Tip:** You can copy and paste the Sprint Backlog as a table into the email body:
+    
+    1\. Remove the unnecessary columns so it looks clean
+    
+    2\. Select all items, copy, then paste into the Sprint Forecast email 📩
+    
+    ***
+    
+    How to get to the Sprint Backlog view:
+    
+    * **GitHub** - Navigate to the Sprint's Backlog view at
+    **GitHub | Organisation | Repository | Projects | Project | Current Sprint**
+    * **Azure DevOps** **-** Navigate to the Sprint's Backlog view at **Azure DevOps | Project | Sprints | Backlog**
+  </>}
+  figurePrefix="none"
+  figure=""
+/>

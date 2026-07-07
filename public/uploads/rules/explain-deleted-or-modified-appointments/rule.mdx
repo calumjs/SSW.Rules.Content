@@ -1,0 +1,89 @@
+---
+type: rule
+title: Appointments - Do you explain why you've deleted or updated an appointment?
+uri: explain-deleted-or-modified-appointments
+categories:
+  - category: categories/communication/rules-to-better-calendars.mdx
+authors:
+  - title: Adam Cogan
+    url: 'https://www.ssw.com.au/people/adam-cogan'
+  - title: Cameron Shaw
+    url: 'https://www.ssw.com.au/people/cameron-shaw'
+  - title: Camilla Rosa Silva
+    url: 'https://www.ssw.com.au/people/camilla-rosa-silva'
+  - title: Jimmy Chen
+    url: 'https://www.ssw.com.au/people/jimmy-chen'
+related:
+  - rule: public/uploads/rules/do-you-know-to-update-a-blog/rule.mdx
+  - rule: public/uploads/rules/email-add-or-remove-someone-from-conversation/rule.mdx
+  - rule: public/uploads/rules/change-the-subject/rule.mdx
+  - rule: public/uploads/rules/email-send-a-v2/rule.mdx
+  - rule: public/uploads/rules/appointments-do-you-show-all-the-necessary-information-in-the-subject/rule.mdx
+redirects:
+  - appointments-do-you-explain-why-youve-deleted-or-updated-an-appointment
+  - appointments-do-you-explain-why-youve-deleted-or-modified-an-appointment
+guid: 1c278726-9df4-44dc-b09b-bb17470c31ad
+seoDescription: 'Appointments changed or deleted require explicit explanations to avoid confusion and ensure transparency, with version numbers tracking changes and attendees updated accordingly.'
+created: 2010-03-15T08:42:32.000Z
+createdBy: Tiago Araujo
+createdByEmail: TiagoAraujo@ssw.com.au
+lastUpdated: 2026-02-17T23:07:07.490Z
+lastUpdatedBy: Tiago Araujo
+lastUpdatedByEmail: TiagoAraujo@ssw.com.au
+archivedreason: null
+---
+
+Every appointment change is disruptive, so always explain **why** it was necessary.
+
+Unlike email, appointment updates don’t keep a visible history of the original content. It is a good idea to add a version number at the top to make changes transparent and track the timeline.
+
+This avoids people starting to question how the change happened.
+
+<endIntro />
+
+Whenever you modify the time, attendees, or subject of an appointment, include a comment at the top explaining the reason for the change.
+
+Altered appointments should include:
+
+* **Your name** - If the appointment is sent from a shared mailbox or Team, it may not show who made the change. Include your name next to your comment for clarity
+* **Version number** - Add a version number (v#) to the notes to help track changes.
+* **[As per our conversation](https://www.ssw.com.au/rules/as-per-our-conversation-emails)** - If the change is based on a conversation, mention who you spoke with in the note so others know who was involved
+
+Example of a change comment:
+
+<boxEmbed
+  body={<>
+    (Calum – V2: Time changed after discussion with Bob, who cannot attend.)
+  </>}
+  figurePrefix="good"
+  figure="Author, version number, and reason included"
+  style="greybox"
+/>
+
+<emailEmbed
+  from=""
+  to="SSWBrisbaneAll; Uly"
+  cc=""
+  bcc=""
+  subject="Marketing - plans for next FY"
+  shouldDisplayBody={true}
+  body={<>
+    Deleted: Meeting has been cancelled
+    
+    (Bob: V5 - Changed subject as we will be talking about Marketing first)
+    
+    (Uly: V4 - As per my conversation with Adam, moving to Thursday as he can't make it)
+    
+    (Bob: V3 - As per my conversation with Uly, adding him in because he wants to know about this)
+    
+    (Bob: V2 - Changed subject as we will be talking about Marketing first)
+    
+    ***
+    
+    &#123;&#123; APPOINTMENT CONTENT &#125;&#125;
+  </>}
+  figurePrefix="good"
+  figure="Explaining the change that has been made using the version number"
+/>
+
+<imageEmbed alt="Image" size="large" showBorder={true} figurePrefix="good" figure="Real-world example demonstrating this rule" src="/uploads/rules/explain-deleted-or-modified-appointments/email-appointment-change.png" />

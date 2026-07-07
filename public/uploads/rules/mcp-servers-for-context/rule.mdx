@@ -1,0 +1,144 @@
+---
+type: rule
+title: Do you give your AI agents context with MCP servers and skills?
+uri: mcp-servers-for-context
+categories:
+  - category: categories/artificial-intelligence/rules-to-better-ai-assisted-development.mdx
+authors:
+  - title: Michael Qiu
+    url: 'https://www.ssw.com.au/people/michael-qiu'
+  - title: Eddie Kranz
+    url: 'https://www.ssw.com.au/people/eddie-kranz'
+related:
+  - rule: public/uploads/rules/mcp-server/rule.mdx
+  - rule: public/uploads/rules/utilize-back-pressure-for-agents/rule.mdx
+guid: 88c66f96-8b4d-45b1-bb2a-794629c28304
+seoDescription: Discover SSW's recommended MCP servers and skills to enhance your AI coding assistants. Learn when to use MCP integrations vs. skills vs. built-in agent capabilities for optimal development workflows.
+created: 2026-01-29T03:54:26.321Z
+createdBy: Michael Qiu
+createdByEmail: MichaelQiu@ssw.com.au
+lastUpdated: 2026-02-09T22:47:20.536Z
+lastUpdatedBy: Michael Qiu
+lastUpdatedByEmail: MichaelQiu@ssw.com.au
+---
+
+AI coding agents come with powerful built-in capabilities, but sometimes you need to extend them further. MCP servers connect agents to external systems like databases and APIs, while skills guide agent behavior through specialized prompts. Knowing when to use each is key to an effective workflow.
+
+<endIntro />
+
+## When you don't need MCP
+
+Modern AI coding agents are excellent at generating impromptu code and CLI commands on the fly. For many common tasks, you don't need an MCP server because agents already have built-in tools that handle these operations natively:
+
+* **File operations** - Reading, writing, and searching files
+* **Git commands** - Commits, branches, diffs, and history
+* **Shell execution** - Running build commands, tests, and scripts
+* **Web requests** - Fetching documentation or API responses
+
+MCP servers become valuable when you need **persistent, specialized integrations** - such as connecting to databases, searching with specific APIs, or interacting with platforms like GitHub in a structured way.
+
+## Skills as an alternative
+
+Skills (also known as slash commands) are another way to extend AI coding assistants. Unlike MCP servers which provide tool access to external systems, skills inject specialized prompts and workflows that guide the AI's behavior for specific tasks.
+
+<boxEmbed
+  body={<>
+    Skills can contain hidden prompt injections that may instruct the AI to run destructive commands or even leak sensitive data. Always make sure to read the full contents of the skill file before using them. Try to avoid skills from third-party marketplaces or untrusted sources.
+  </>}
+  figurePrefix="none"
+  figure=""
+  style="warning"
+/>
+
+### When to use Skills vs MCP Servers
+
+Use **Skills** when you need to guide the AI's behavior without external access:
+
+* When working with a proprietary or domain-specific language (DSL) or internal framework that is unlikely to be well-represented in the AI's training data
+* Standardizing commit message formats
+* Enforcing code review checklists
+* Following team coding conventions
+* Generating boilerplate with specific patterns
+
+Use **MCP Servers** when you need to connect to external systems:
+
+* Querying a live database
+* Interacting with GitHub Issues/PRs
+* Searching external APIs (e.g. Brave Search)
+* Running browser automation
+
+### Best practices for Skills
+
+* **Use skills for workflow standardization** - When you want consistent outputs like commit messages, PR descriptions, or code following specific patterns
+* **Keep skills focused** - Each skill should do one thing well rather than trying to handle multiple scenarios
+* **Prefer skills for prompt injection** - If you just need to guide the AI's approach or provide context without external system access, skills are simpler to set up than MCPs
+* **Combine with MCP when needed** - Skills and MCP servers work well together. Use skills to define the workflow and MCP servers to provide the data access
+
+### Example: Claude Code custom slash commands
+
+Claude Code allows you to create custom slash commands by adding markdown files to your project's `.claude/commands/` directory:
+
+<boxEmbed
+  body={<>
+    ```markdown
+    Review this code for:
+    - Security vulnerabilities
+    - Performance issues
+    - Adherence to our team's coding standards
+    - Test coverage gaps
+    
+    Provide actionable feedback with specific line references.
+    ```
+  </>}
+  figurePrefix="good"
+  figure="Review skill within Claude Code at `.claude/commands/review.md`"
+/>
+
+This can then be invoked with `/project:review` in Claude Code.
+
+## Recommended MCP Servers
+
+* [GitHub MCP](https://github.com/github/github-mcp-server) - Allows AI tools to directly connect to GitHub's platform, giving them the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows.
+* [Brave Search MCP](https://github.com/brave/brave-search-mcp-server) - An integration to the Brave Search API, providing comprehensive search capabilities, including web search, local business search, video search, news search, and AI-powered summarization.
+* [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) - Allows AI models to interact with a local or remote computer's file system, enabling it to read and write files, manage directories, search and organize files and retrieve metadata.
+* [Aspire MCP](https://aspire.dev/dashboard/mcp-server/) - Integrates Aspire into your development AI eco-system, allowing it to query resources, debug with real-time console logs, investigate development time telemetry, and execute resource commands.
+* [Playwright MCP](https://github.com/microsoft/playwright-mcp) - Enables AI tools to interact with web browsers through structured accessibility snapshots, allowing them to navigate pages, interact with elements, fill forms, and execute browser automation without requiring screenshots or vision models.
+* [PostgreSQL MCP](https://github.com/crystaldba/postgres-mcp) - Connects AI tools to PostgreSQL databases, enabling them to explore schemas, run read-only queries, and analyze data directly.
+* [MySQL MCP](https://github.com/benborla/mcp-server-mysql) - Provides AI tools with access to MySQL databases for schema exploration, query execution, and data analysis.
+
+## Configuring MCP Servers
+
+MCP servers are configured via JSON configuration files, with the location of them depending on your chosen client, for example, for Claude Desktop:
+
+Location:
+
+* macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+* Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/files"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/mydb"]
+    }
+  }
+}
+```
+
+## Further reading
+
+* [Official MCP Documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
+* [MCP Servers Repository](https://github.com/modelcontextprotocol/servers) - Official collection of reference MCP server implementations
+* [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) - Community-curated list of MCP servers

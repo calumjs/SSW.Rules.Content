@@ -1,0 +1,141 @@
+---
+type: rule
+title: Do you do automated UI testing?
+uri: automated-ui-testing
+categories:
+  - category: categories/software-engineering/rules-to-better-user-acceptance-tests-uat-for-bug-management.mdx
+authors:
+  - title: Matt Goldman
+    url: 'https://www.ssw.com.au/people/matt-goldman'
+  - title: Jake Bayliss
+    url: 'https://www.ssw.com.au/people/jake-bayliss'
+  - title: Piers Sinclair
+    url: 'https://www.ssw.com.au/people/piers-sinclair'
+  - title: Hark Singh
+    url: 'https://www.ssw.com.au/people/hark-singh'
+related:
+  - rule: public/uploads/rules/the-different-types-of-test/rule.mdx
+  - rule: public/uploads/rules/playwright-with-ai/rule.mdx
+  - rule: public/uploads/rules/bdd/rule.mdx
+redirects:
+  - microsoft-recommended-frameworks-for-automated-ui-driven-functional-testing
+guid: ca225c48-cf34-42c0-b125-3155dfef3398
+seoDescription: Discover the best practices for implementing automated UI testing with tools like Playwright and learn when to use it effectively in your test strategy.
+created: 2021-10-15T06:12:32.419Z
+createdBy: Luke Parker
+createdByEmail: 10430890+Hona@users.noreply.github.com
+lastUpdated: 2026-05-20T23:55:21.048Z
+lastUpdatedBy: 'Harkirat Singh [SSW]'
+lastUpdatedByEmail: sandhukirat23@gmail.com
+isArchived: false
+---
+
+Automated UI testing is a valuable component of a test strategy, to check interacting with the software in a similar way to end users.
+
+<endIntro />
+
+### Benefits
+
+As part of an overall test strategy that blends human testing with automation, automating at the UI level can be helpful to check that key user workflows keep working as we expect.
+
+Lower level automated tests (e.g. unit tests) are small in scope and are unlikely to catch problems with more sophisticated usage patterns of the software. Higher level tests via the user interface are much larger in scope and have the potential to mitigate the risk of important user workflows becoming broken in production.
+
+### Tooling
+
+There are numerous tools available for facilitating automated UI testing through the browser:
+
+* [Playwright](https://playwright.dev/)  (✅ recommended)
+* [Selenium](https://www.selenium.dev/) (was the gold standard)
+* Several others: [Telerik Test Studio](https://www.telerik.com/teststudio/), [Cypress](https://www.cypress.io/), or [Puppeteer](https://pptr.dev/), to name a few.
+
+#### Playwright
+
+<boxEmbed
+  body={<>
+    With the latest AI tooling, AI Agents can use **Playwright MCP**, **Playwright CLI**, and **specialized Test Agents** to help write better UI tests.
+    
+    Read more: [Do you know how to use Playwright with your AI Agents?](https://www.ssw.com.au/rules/playwright-with-ai)
+  </>}
+  figurePrefix="none"
+  figure=""
+  style="tips"
+/>
+
+Playwright allows you to write tests in many popular languages including .NET, Java, Python and JavaScript/TypeScript.
+
+Playwright has a few advantages over Selenium:
+
+* [Actionability](https://playwright.dev/docs/actionability/)
+* Performance
+* Stability
+* [Switching browser contexts for parallel testing](https://playwright.dev/docs/browser-contexts#browser-context)
+* and more...
+
+```JavaScript
+//Store the ID of the original window
+const originalWindow = await driver.getWindowHandle();
+
+//Check we don't have other windows open already
+assert((await driver.getAllWindowHandles()).length === 1);
+
+//Click the link which opens in a new window
+await driver.findElement(By.linkText('new window')).click();
+
+//Wait for the new window or tab
+await driver.wait(
+    async () => (await driver.getAllWindowHandles()).length === 2,
+    10000
+  );
+
+//Loop through until we find a new window handle
+const windows = await driver.getAllWindowHandles();
+windows.forEach(async handle => {
+  if (handle !== originalWindow) {
+    await driver.switchTo().window(handle);
+  }
+});
+
+//Wait for the new tab to finish loading content
+await driver.wait(until.titleIs('Selenium documentation'), 10000);
+```
+
+**❌ Figure: Bad example - Selenium only lets you have one window focused at a time meaning you can't do parallel testing easily**
+
+```JavaScript
+const { chromium } = require('playwright');
+
+// Create a Chromium browser instance
+const browser = await chromium.launch();
+
+// Create two isolated browser contexts
+const userContext = await browser.newContext();
+const adminContext = await browser.newContext();
+
+// Create pages and interact with contexts independently
+```
+
+**✅ Figure: Good example - Playwright makes it easy to spin up independent browser contexts for parallel testing**
+
+#### Playwright codegen
+
+Playwright offers a [cool feature](https://playwright.dev/docs/cli/#generate-code) that lets developers record actions in the browser to automatically generate the code for tests.
+
+**Note:** While this feature is useful for learning the syntax and structure of Playwright tests, it **should not** be used to generate production-quality test code.
+
+#### Example of using Playwright
+
+Watch [Matt Goldman](https://www.ssw.com.au/people/matt-goldman) and Andreas Lengkeek from SSW demonstrate the use of Playwright to create a simple UI test in this YouTube video:
+
+<youtubeEmbed url="https://www.youtube.com/watch?v=2hibiFfuPao" description="" />
+
+### Caution
+
+Automated UI testing is powerful, but it should still be done with planning.
+
+Modern tools like Playwright and AI Agents have reduced the maintenance pain by helping teams write, debug, and fix tests.
+
+However, UI tests are still slower to run because they interact with the browser and test broader user workflows. 
+
+Use them for important workflows.
+
+See [Do you remember to use automated UI testing sparingly?](/automated-ui-testing-sparingly/)

@@ -1,0 +1,51 @@
+---
+type: rule
+title: Do you label web form buttons consistently?
+uri: label-buttons-consistently
+categories:
+  - category: categories/design/rules-to-better-interfaces-forms.mdx
+authors:
+  - title: Toby Churches
+    url: 'https://github.com/TobyChurches'
+  - title: Piers Sinclair
+    url: 'https://www.ssw.com.au/people/piers-sinclair'
+related:
+  - rule: public/uploads/rules/user-authentication-terms/rule.mdx
+  - rule: public/uploads/rules/destructive-button-ui-ux/rule.mdx
+redirects:
+  - do-you-know-the-difference-between-close-and-cancel
+  - do-you-know-to-use-save-save-and-close-on-a-webpage
+  - do-you-name-all-your-ok-buttons-to-be-an-action-eg-save-open-etc
+guid: f365576c-a2cd-4710-8e79-7bd5901d55e5
+seoDescription: Labeling web-based form buttons consistently ensures a seamless user experience by minimizing confusion and learning curves.
+created: 2023-02-01T03:43:00.000Z
+createdBy: Tiago Araujo
+createdByEmail: TiagoAraujo@ssw.com.au
+lastUpdated: 2026-05-11T23:06:10.009Z
+lastUpdatedBy: Tiago Araujo
+lastUpdatedByEmail: TiagoAraujo@ssw.com.au
+archivedreason: null
+---
+
+Consistency helps reduce the learning curve in web applications. When buttons with similar actions are labelled differently across forms, users can become confused about what each action will do.
+
+<endIntro />
+
+For example, **Close** can be unclear because users may not know whether their changes will be saved. **Cancel** is clearer when the form closes without saving. **Save** can also be ambiguous if it is unclear whether the form will stay open or close after saving.
+
+We recommend the web standards of:
+
+* **Save** - Save data without closing the form
+* **Save and Close** - Close the form and save any changed data
+* **Cancel** - Close the form without saving
+
+<imageEmbed alt="Image" size="medium" showBorder={true} figurePrefix="good" figure="This form uses the standard button naming standards (and has the Default buttons set!)" src="/uploads/rules/label-buttons-consistently/GoodFormButtonLabel.png" />
+
+<boxEmbed
+  body={<>
+    Avoid vague labels like **OK** when a clearer verb is available. Button labels should describe the action and the result, so users know exactly what to expect.
+  </>}
+  figurePrefix="none"
+  figure=""
+  style="tips"
+/>

@@ -1,0 +1,43 @@
+---
+archivedreason: null
+authors:
+- title: Adam Cogan
+  url: https://www.ssw.com.au/people/adam-cogan
+- title: Tiago Araujo
+  url: https://www.ssw.com.au/people/tiago-araujo
+- title: Camilla Rosa Silva
+  url: https://www.ssw.com.au/people/camilla-rosa-silva
+created: 2015-11-10 19:57:28+00:00
+createdBy: Tiago Araujo
+createdByEmail: TiagoAraujo@ssw.com.au
+guid: 2dce17ea-4786-4f31-a919-e1b36a044a26
+isArchived: false
+lastUpdated: 2021-06-09 17:19:03.335000+00:00
+lastUpdatedBy: Tiago Araújo [SSW]
+lastUpdatedByEmail: tiagov8@gmail.com
+redirects:
+- do-you-keep-your-files-under-the-google-file-size-limit
+seoDescription: Google's search appliance has a file size limit of 500kb and may ignore
+  files larger than 30MB.
+title: Technical - Do you keep web pages under Google’s crawl size limits?
+categories:
+  - category: categories/marketing-and-video/rules-to-better-google-rankings-and-seo.mdx
+type: rule
+uri: keep-files-under-the-google-file-size-limit
+---
+
+Google’s crawlers and fetchers don’t process unlimited content. By default, they only crawl the first 15MB of a file, and any content beyond that limit is ignored. Individual crawlers (such as Googlebot) may enforce smaller limits for specific file types. For example, an HTML page may effectively be limited to around 2MB, while a PDF might allow a larger size.
+
+If critical content appears after the crawl limit, it may **not** be indexed, meaning it won’t appear in search results.
+
+<endIntro />
+
+## Why this matters
+
+- **SEO impact** – Content beyond the crawl limit will not be indexed
+- **Structured data risk** – Schema markup placed too late in a large file may be ignored
+- **Hidden performance issues** – Oversized HTML often signals unnecessary scripts, inline styles, or duplicated markup
+- **Large CMS pages** – Rich editors, embedded components, and repeated sections can silently inflate file size
+
+More information on [Overview of Google crawlers and fetchers (user agents)](https://developers.google.com/crawling/docs/crawlers-fetchers/overview-google-crawlers#file-size-limits).
+

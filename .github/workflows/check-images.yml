@@ -5,6 +5,8 @@ on:
   # # Triggers the workflow on pull request events but only for the main branch
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - ".github/**"
   # TODO: Trigger temporarily disabled as per https://github.com/SSWConsulting/SSW.Rules/issues/1065
     
   # Allows you to run this workflow manually from the Actions tab
@@ -18,7 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}

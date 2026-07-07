@@ -16,7 +16,7 @@ jobs:
 
     steps:
       # Step 1: Check out the source code of the pull request.
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -37,7 +37,7 @@ jobs:
 
       # Step 4: Create PR for the changes
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: SSW-Rules-Bot <rules-bot@example.com>
